@@ -1,12 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from './core/i18n/translation.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.sass'
+  styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('portfolio');
+  protected readonly i18n = inject(TranslationService);
 }
