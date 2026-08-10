@@ -508,11 +508,7 @@ h2 {
   padding: 25px 0;
 }
 
-.compact > div {
-  display: contents;
-}
-
-.compact > div > span {
+.role-period {
   color: var(--muted);
   font-size: 11px;
   line-height: 1.45;
@@ -532,8 +528,17 @@ h2 {
   font-weight: 400;
 }
 
-.compact > p {
+.role-details {
   padding-top: 3px;
+}
+
+.role-tech {
+  margin-top: 11px !important;
+  color: #779910 !important;
+  font-size: 10px !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.55 !important;
 }
 
 .contact {
@@ -647,8 +652,7 @@ h2 {
   .tags {
     padding-left: 0;
   }
-  .compact,
-  .compact > div {
+  .compact {
     display: flex;
     align-items: flex-start;
     gap: 12px;
