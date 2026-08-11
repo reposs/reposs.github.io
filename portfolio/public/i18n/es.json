@@ -60,5 +60,12 @@
   "meaningful": "Creemos algo",
   "meaningfulAccent": "relevante.",
   "footer": "© 2026 Roberto David Márquez Prieto",
-  "email": "Correo"
+  "email": "Correo",
+  "navCv": "CV",
+  "viewCv": "Ver / Imprimir CV",
+  "downloadCv": "Descargar Markdown (.md)",
+  "printCv": "Imprimir / Guardar PDF",
+  "cvModalTitle": "Curriculum Vitae",
+  "cvModalSubtitle": "Roberto David Márquez Prieto — Senior Frontend Developer",
+  "closeCvModal": "Cerrar"
 }

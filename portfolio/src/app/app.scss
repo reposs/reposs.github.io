@@ -151,7 +151,7 @@ h2 {
   letter-spacing: -0.065em;
 }
 
-h1 {
+.hero h1 {
   max-width: 700px;
   font-size: clamp(52px, 6.25vw, 84px);
   line-height: 0.99;
@@ -670,5 +670,40 @@ h2 {
   }
   .footer {
     width: min(100% - 38px, 600px);
+  }
+}
+
+/* --- CV Navigation & Hero Action Styles --- */
+.nav-cv-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 6px 12px;
+  color: var(--ink);
+  font:
+    700 12px/1 'Manrope',
+    sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--ink);
+    color: var(--acid);
+    border-color: var(--ink);
+  }
+}
+
+.button-cv {
+  background: transparent;
+  border-color: var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+
+  &:hover {
+    background: var(--ink);
+    color: var(--acid);
   }
 }

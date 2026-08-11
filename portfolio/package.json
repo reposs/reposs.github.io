@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build -c production --output-path ../docs --base-href / && mv ../docs/browser/* ../docs/ && rm -rf ../docs/browser",
+    "build": "ng build -c production --output-path ../docs --base-href / && node -e \"const fs=require('fs'); fs.cpSync('../docs/browser', '../docs', {recursive: true}); fs.rmSync('../docs/browser', {recursive: true, force: true});\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "format": "prettier --write \"src/**/*.{ts,html,scss}\" \"public/**/*.json\" \"*.json\"",
