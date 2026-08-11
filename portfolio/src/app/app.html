@@ -34,6 +34,19 @@
           ES
         </button>
       </div>
+      <button
+        type="button"
+        class="theme-toggle-btn"
+        (click)="themeService.toggleTheme()"
+        [attr.aria-label]="i18n.translateKey('themeToggle')"
+        [title]="i18n.translateKey('themeToggle')"
+      >
+        @if (themeService.theme() === 'dark') {
+          <span>☀️</span>
+        } @else {
+          <span>🌙</span>
+        }
+      </button>
     </div>
   </nav>
 

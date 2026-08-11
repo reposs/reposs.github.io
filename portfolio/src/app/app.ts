@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
 import { TranslationService } from './core/i18n/translation.service';
+import { ThemeService } from './core/theme/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { TranslationService } from './core/i18n/translation.service';
 })
 export class App {
   protected readonly i18n = inject(TranslationService);
+  protected readonly themeService = inject(ThemeService);
   protected readonly isCvOpen = signal(false);
 
   openCv(): void {

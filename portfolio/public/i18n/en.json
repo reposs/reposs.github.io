@@ -67,5 +67,8 @@
   "printCv": "Print / Save PDF",
   "cvModalTitle": "Curriculum Vitae",
   "cvModalSubtitle": "Roberto David Márquez Prieto — Senior Frontend Developer",
-  "closeCvModal": "Close"
+  "closeCvModal": "Close",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "themeToggle": "Toggle theme"
 }

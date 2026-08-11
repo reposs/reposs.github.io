@@ -4,8 +4,33 @@
   --line: #d7ded6;
   --paper: #f7f8f4;
   --acid: #d4ff38;
+  --card-bg: #dcead7;
+  --card-text: #425645;
+  --btn-primary-bg: #172019;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #3a493d;
+  --btn-active-bg: #172019;
+  --btn-active-text: #d4ff38;
   display: block;
   color: var(--ink);
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+:host-context(html.dark-mode) {
+  --ink: #f0f4ef;
+  --muted: #95a898;
+  --line: #223225;
+  --paper: #0c120d;
+  --acid: #d4ff38;
+  --card-bg: #152217;
+  --card-text: #a8c4ab;
+  --btn-primary-bg: #d4ff38;
+  --btn-primary-text: #121a13;
+  --btn-primary-hover: #c4f51f;
+  --btn-active-bg: #d4ff38;
+  --btn-active-text: #121a13;
 }
 
 .container {
@@ -89,8 +114,33 @@
 }
 
 .language-switch button.active {
-  background: var(--ink);
-  color: var(--acid);
+  background: var(--btn-active-bg);
+  color: var(--btn-active-text);
+  font-weight: 800;
+}
+
+.theme-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  transition: all 0.2s ease;
+  margin-left: 2px;
+
+  &:hover {
+    background: var(--ink);
+    color: var(--acid);
+    border-color: var(--ink);
+    transform: scale(1.08);
+  }
 }
 
 .nav-contact {
@@ -194,12 +244,14 @@ em {
 }
 
 .button-primary {
-  background: var(--ink);
-  color: white;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
 }
 
 .button-primary:hover {
-  background: #3a493d;
+  background: var(--btn-primary-hover);
+  border-color: var(--btn-primary-hover);
 }
 
 .button-secondary {
@@ -209,27 +261,52 @@ em {
 .profile-card {
   min-height: 400px;
   padding: 18px;
-  background: #dcead7;
+  background: var(--card-bg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 2px;
+  border-radius: 4px;
   overflow: hidden;
+  border: 1px solid var(--line);
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .profile-top {
   gap: 8px;
-  color: #425645;
+  color: var(--card-text);
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 .status-dot {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background: #4f7a35;
+  background: #56a033;
+  box-shadow: 0 0 0 0 rgba(86, 160, 51, 0.7);
+  animation: pulseGlow 2.2s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(86, 160, 51, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(86, 160, 51, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(86, 160, 51, 0);
+  }
 }
 
 .profile-year {
@@ -241,9 +318,14 @@ em {
   height: 174px;
   align-self: center;
   overflow: hidden;
-  border: 7px solid rgba(255, 255, 255, 0.5);
+  border: 7px solid rgba(255, 255, 255, 0.35);
   border-radius: 50%;
-  box-shadow: 0 18px 42px rgba(40, 73, 48, 0.16);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.04) rotate(1deg);
+  }
 }
 
 .profile-photo img {
@@ -256,7 +338,7 @@ em {
 
 .profile-bottom {
   justify-content: space-between;
-  color: #425645;
+  color: var(--card-text);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -268,6 +350,16 @@ em {
   position: relative;
   border: 1px solid #79976d;
   border-radius: 50%;
+  animation: spinSlow 30s linear infinite;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .orbit i {
@@ -433,6 +525,26 @@ h2 {
 
 .role {
   border-bottom: 1px solid var(--line);
+  transition:
+    padding-left 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+  position: relative;
+
+  &:hover {
+    padding-left: 12px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 15%;
+      bottom: 15%;
+      width: 3px;
+      background: var(--acid);
+      border-radius: 2px;
+    }
+  }
 }
 
 .featured {

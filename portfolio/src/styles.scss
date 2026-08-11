@@ -436,3 +436,91 @@ body {
     }
   }
 }
+
+/* --- Dark Mode CV Modal Overrides --- */
+html.dark-mode {
+  body {
+    background: #0c120d !important;
+    color: #f0f4ef !important;
+  }
+
+  .cv-modal-card {
+    background: #141f16;
+    color: #e6ece7;
+    border: 1px solid #233526;
+  }
+
+  .cv-modal-header {
+    background: #0f1811;
+    border-bottom-color: #233526;
+
+    h3 {
+      color: #f0f4ef;
+    }
+    .cv-modal-subtitle {
+      color: #95a898;
+    }
+  }
+
+  .cv-action-btn.secondary {
+    background: #1c2b1e;
+    color: #f0f4ef;
+    border-color: #2e4431;
+
+    &:hover {
+      background: #283d2b;
+    }
+  }
+
+  .cv-modal-close {
+    color: #95a898;
+
+    &:hover {
+      background: #233526;
+      color: #f0f4ef;
+    }
+  }
+
+  .cv-document {
+    color: #e6ece7;
+
+    h1,
+    h2,
+    h3,
+    strong {
+      color: #ffffff;
+    }
+
+    .cv-subtitle {
+      color: #a3b8a6;
+    }
+
+    .cv-contact-bar {
+      color: #cbd5ce;
+
+      a {
+        color: #7dd3fc;
+      }
+    }
+
+    .cv-divider {
+      border-top-color: #233526;
+    }
+
+    .cv-section h2 {
+      border-bottom-color: #d4ff38;
+      color: #ffffff;
+    }
+
+    p,
+    li {
+      color: #d1ddd3;
+    }
+
+    .cv-job .cv-job-tech {
+      background: #1c2e20;
+      color: #d4ff38;
+      border: 1px solid #2e4933;
+    }
+  }
+}
