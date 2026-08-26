@@ -481,6 +481,113 @@ h2 {
   padding: 0 0 130px;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 0;
+  padding: 0 0 130px;
+}
+
+.projects-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+}
+
+.projects-heading p {
+  max-width: 280px;
+  margin-top: 25px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.project-list {
+  border-top: 1px solid var(--ink);
+}
+
+.project-card {
+  padding: 22px 0 24px;
+  border-bottom: 1px solid var(--line);
+  transition:
+    padding-left 0.25s ease,
+    background-color 0.25s ease;
+
+  &:hover {
+    padding-left: 12px;
+    background: color-mix(in srgb, var(--card-bg) 35%, transparent);
+  }
+}
+
+.project-card-top,
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-card-top,
+.project-tech {
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-status {
+  color: #779910;
+  font-weight: 700;
+}
+
+.project-card h3 {
+  margin: 23px 0 8px;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.project-card > p {
+  max-width: 470px;
+  min-height: 42px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.project-tech {
+  margin-top: 17px;
+  color: #779910;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.project-links {
+  justify-content: flex-start;
+  margin-top: 19px;
+  gap: 22px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-links a:first-child {
+  color: #779910;
+}
+
+.project-links span {
+  font-size: 16px;
+  line-height: 0;
+}
+
 .education-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -726,6 +833,7 @@ h2 {
   }
   .expertise,
   .experience,
+  .projects,
   .education {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -744,6 +852,10 @@ h2 {
     gap: 45px;
   }
   .expertise-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .projects-content {
     grid-template-columns: 1fr;
     gap: 45px;
   }

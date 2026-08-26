@@ -9,6 +9,7 @@
     <div class="nav-links">
       <a href="#expertise">{{ i18n.translateKey('navExpertise') }}</a>
       <a href="#experience">{{ i18n.translateKey('navExperience') }}</a>
+      <a href="#projects">{{ i18n.translateKey('navProjects') }}</a>
       <a href="#education">{{ i18n.translateKey('navEducation') }}</a>
       <button type="button" class="nav-cv-btn" (click)="openCv()">
         📄 {{ i18n.translateKey('navCv') }}
@@ -247,9 +248,83 @@
     </div>
   </section>
 
-  <section class="education container" id="education">
+  <section class="projects container" id="projects">
     <div class="section-label">
       <span>03</span>
+      <p>{{ i18n.translateKey('projectsLabel') }}</p>
+    </div>
+    <div class="projects-content">
+      <div class="projects-heading">
+        <h2>
+          {{ i18n.translateKey('projectsHeading') }}<br /><em>{{
+            i18n.translateKey('projectsAccent')
+          }}</em>
+        </h2>
+        <p>{{ i18n.translateKey('projectsIntro') }}</p>
+      </div>
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-card-top">
+            <span>01 / Angular</span>
+            <span class="project-status">{{ i18n.translateKey('liveProject') }}</span>
+          </div>
+          <h3>Demo Angular</h3>
+          <p>{{ i18n.translateKey('angularDemoText') }}</p>
+          <div class="project-tech">Angular 21 · TypeScript · Arquitectura hexagonal</div>
+          <div class="project-links">
+            <a href="https://reposs.github.io/demo-angular/" target="_blank" rel="noopener">
+              {{ i18n.translateKey('tryDemo') }} <span>↗</span>
+            </a>
+            <a href="https://github.com/reposs/demo-angular" target="_blank" rel="noopener">
+              {{ i18n.translateKey('viewCode') }} <span>↗</span>
+            </a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-card-top">
+            <span>02 / NestJS</span>
+            <span class="project-status">{{ i18n.translateKey('liveProject') }}</span>
+          </div>
+          <h3>Demo NestJS</h3>
+          <p>{{ i18n.translateKey('nestjsDemoText') }}</p>
+          <div class="project-tech">NestJS · TypeScript · PostgreSQL · Swagger</div>
+          <div class="project-links">
+            <a href="https://demo-nestjs-myw0.onrender.com/api" target="_blank" rel="noopener">
+              {{ i18n.translateKey('tryApi') }} <span>↗</span>
+            </a>
+            <a href="https://github.com/reposs/demo-nestjs" target="_blank" rel="noopener">
+              {{ i18n.translateKey('viewCode') }} <span>↗</span>
+            </a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-card-top">
+            <span>03 / FastAPI</span>
+            <span class="project-status">{{ i18n.translateKey('liveProject') }}</span>
+          </div>
+          <h3>FastAPI Demo</h3>
+          <p>{{ i18n.translateKey('fastApiDemoText') }}</p>
+          <div class="project-tech">Python · FastAPI · SQLAlchemy · JWT</div>
+          <div class="project-links">
+            <a
+              href="https://fastapi-demo-1373c10f.fastapicloud.dev/docs"
+              target="_blank"
+              rel="noopener"
+            >
+              {{ i18n.translateKey('tryApi') }} <span>↗</span>
+            </a>
+            <a href="https://github.com/reposs/fastApi-demo" target="_blank" rel="noopener">
+              {{ i18n.translateKey('viewCode') }} <span>↗</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="education container" id="education">
+    <div class="section-label">
+      <span>04</span>
       <p>{{ i18n.translateKey('educationLabel') }}</p>
     </div>
     <div class="education-content">
@@ -291,7 +366,9 @@
         i18n.translateKey('meaningfulAccent')
       }}</em>
     </h2>
-    <a href="mailto:rdavid.marquez.prieto&#64;gmail.com" class="email-link">rdavid.marquez.prieto&#64;gmail.com</a>
+    <a href="mailto:rdavid.marquez.prieto&#64;gmail.com" class="email-link"
+      >rdavid.marquez.prieto&#64;gmail.com</a
+    >
   </section>
 
   <footer class="footer container">
@@ -349,10 +426,7 @@
         <span>📞 633 582 744</span>
         <span>✉️ rdavid.marquez.prieto&#64;gmail.com</span>
         <span
-          >🔗
-          <a href="https://reposs.github.io" target="_blank" rel="noopener"
-            >Portfolio</a
-          ></span
+          >🔗 <a href="https://reposs.github.io" target="_blank" rel="noopener">Portfolio</a></span
         >
         <span
           >🔗
@@ -361,7 +435,8 @@
             target="_blank"
             rel="noopener"
             >LinkedIn</a
-          ></span>
+          ></span
+        >
       </div>
     </header>
 
