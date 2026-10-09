@@ -30,6 +30,8 @@
   "implementationText": "From Figma designs to accessible, responsive, and production-ready interfaces. Leveraging AI development tools (Copilot, Codex, Claude Code) to accelerate delivery.",
   "fluency": "Full-Stack Depth & DevOps",
   "fluencyText": "Node.js, NestJS, Python (Django, Falcon), REST/SOAP APIs, databases (PostgreSQL, TypeORM), Docker, and CI/CD pipelines for complete end-to-end fluency.",
+  "quality": "Quality",
+  "qualityText": "Rigorous focus on automated testing (Vitest, Jest, Cypress E2E), Clean Code, SOLID principles, and TDD to guarantee resilient, debt-free architecture.",
   "skillsLabel": "Technical competencies",
   "skillsHeading": "Technology stack and",
   "skillsAccent": "core expertise.",

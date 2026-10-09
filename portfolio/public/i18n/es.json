@@ -30,6 +30,8 @@
   "implementationText": "Traducción rigurosa de prototipos Figma a código accesible, responsive y de alto rendimiento. Integración de herramientas de IA (Copilot, Codex, Claude Code) para acelerar el desarrollo.",
   "fluency": "Profundidad Full-Stack & DevOps",
   "fluencyText": "Node.js, NestJS, Python (Django, Falcon), APIs REST/SOAP, bases de datos (PostgreSQL, TypeORM) y despliegues con Docker y CI/CD para una visión extremo a extremo.",
+  "quality": "Quality",
+  "qualityText": "Enfoque riguroso en testing automatizado (Vitest, Jest, Cypress E2E), Clean Code, principios SOLID y TDD para garantizar software robusto y libre de deuda técnica.",
   "skillsLabel": "Competencias técnicas",
   "skillsHeading": "Stack tecnológico y",
   "skillsAccent": "especialización.",
