@@ -1,8 +1,9 @@
 import { DOCUMENT } from '@angular/common';
 import { Injectable, inject, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { AppLanguage } from './translation.model';
 
-export type AppLanguage = 'en' | 'es';
+export type { AppLanguage };
 
 /** Centralizes application language selection and translation lookups. */
 @Injectable({ providedIn: 'root' })

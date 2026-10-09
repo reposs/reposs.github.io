@@ -1,69 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="es" class="dark-mode">
   <head>
     <meta charset="utf-8" />
-    <title>Roberto David Márquez Prieto | Senior Frontend Developer</title>
+    <title>Roberto David Márquez Prieto | Senior Frontend & Full-Stack Developer</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('portfolio-theme');
+          if (theme === 'light') {
+            document.documentElement.classList.remove('dark-mode');
+          } else {
+            document.documentElement.classList.add('dark-mode');
+          }
+        } catch (e) {}
+      })();
+    </script>
     <meta
       name="description"
-      content="Roberto David Márquez Prieto is a Senior Frontend Developer in Barcelona, specialised in Angular, Node.js, microfrontends and scalable digital products."
+      content="Roberto David Márquez Prieto - Senior Frontend Developer & Full-Stack Architect en Barcelona. Más de 12 años de experiencia en Angular (v2-v21), Microfrontends bancarios (Banco Santander, Banco Sabadell), Node.js, NestJS y flujos acelerados con IA."
     />
     <meta name="author" content="Roberto David Márquez Prieto" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#172019" />
+    <meta name="theme-color" content="#080c14" />
     <link rel="canonical" href="/" />
     <link rel="alternate" hreflang="en" href="/" />
     <link rel="alternate" hreflang="es" href="/" />
     <link rel="alternate" hreflang="x-default" href="/" />
 
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Roberto David Márquez Prieto | Senior Frontend Developer" />
+    <meta
+      property="og:title"
+      content="Roberto David Márquez Prieto | Senior Frontend & Full-Stack Developer"
+    />
     <meta
       property="og:description"
-      content="Senior Frontend Developer with 10+ years of experience building robust Angular and Node.js products."
+      content="Senior Frontend Developer con más de 12 años de experiencia construyendo arquitecturas robustas en Angular (v2-v21), Microfrontends bancarios y Node.js/NestJS."
     />
     <meta property="og:image" content="/images/profile.jpeg" />
-    <meta property="og:image:alt" content="Portrait of Roberto David Márquez Prieto" />
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:locale:alternate" content="es_ES" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Roberto David Márquez Prieto | Senior Frontend Developer" />
+    <meta property="og:image:alt" content="Foto de perfil de Roberto David Márquez Prieto" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Roberto David Márquez Prieto | Senior Frontend & Full-Stack Developer"
+    />
     <meta
       name="twitter:description"
-      content="Senior Frontend Developer with 10+ years of experience building robust Angular and Node.js products."
+      content="Senior Frontend Developer con más de 12 años de experiencia en Angular (v2-v21), Microfrontends bancarios y Node.js/NestJS."
     />
     <meta name="twitter:image" content="/images/profile.jpeg" />
-    <meta name="twitter:image:alt" content="Portrait of Roberto David Márquez Prieto" />
+    <meta name="twitter:image:alt" content="Foto de perfil de Roberto David Márquez Prieto" />
     <link rel="icon" type="image/jpeg" href="/images/profile.jpeg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Roberto David Márquez Prieto",
-        "jobTitle": "Senior Frontend Developer",
-        "description": "Senior Frontend Developer with more than 10 years of experience in Angular, Node.js, microfrontends and full-stack web development.",
+        "jobTitle": "Senior Frontend Developer & Full-Stack Architect",
+        "description": "Senior Frontend Developer con más de 12 años de experiencia liderando el diseño y arquitectura de aplicaciones web en Angular (v2-v21), Microfrontends bancarios, NestJS, Node.js y flujos con IA.",
         "image": "/images/profile.jpeg",
         "email": "mailto:rdavid.marquez.prieto@gmail.com",
-        "url": "/",
+        "telephone": "+34633582744",
+        "url": "https://reposs.github.io",
+        "sameAs": [
+          "https://github.com/reposs",
+          "https://www.linkedin.com/in/roberto-david-marquez-prieto-5bab6a77"
+        ],
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Barcelona",
+          "addressLocality": "L'Hospitalet de Llobregat",
+          "addressRegion": "Barcelona",
           "addressCountry": "ES"
         },
         "alumniOf": [
-          { "@type": "CollegeOrUniversity", "name": "Universitat Oberta de Catalunya" },
+          { "@type": "CollegeOrUniversity", "name": "Universitat Oberta de Catalunya (UOC)" },
           { "@type": "EducationalOrganization", "name": "IES Provençana" }
         ],
         "knowsAbout": [
           "Angular",
+          "Angular Signals",
+          "NgRx",
           "TypeScript",
           "JavaScript",
+          "Microfrontends",
+          "Hexagonal Architecture",
           "Node.js",
           "NestJS",
-          "Microfrontends",
-          "Frontend architecture",
-          "REST APIs"
+          "Python",
+          "REST APIs",
+          "Docker",
+          "TDD",
+          "Jest"
         ]
       }
     </script>

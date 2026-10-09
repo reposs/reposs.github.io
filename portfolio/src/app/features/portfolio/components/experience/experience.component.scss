@@ -1,0 +1,140 @@
+:host {
+  display: block;
+}
+
+.section {
+  padding: 85px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.25s ease;
+
+  &:hover {
+    border-color: var(--border-subtle);
+    box-shadow: var(--shadow-md);
+  }
+
+  &.featured-role {
+    border-left: 4px solid var(--primary);
+  }
+
+  &.compact-card {
+    padding: 22px 26px;
+  }
+}
+
+.timeline-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.timeline-period-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-surface-elevated);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.timeline-client-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.bank-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.timeline-role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.company-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  margin: 0 0 3px;
+}
+
+.role-subheading {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.role-senior-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--bg-surface-elevated);
+  color: var(--primary);
+  border: 1px solid var(--border-color);
+}
+
+.timeline-description {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.timeline-tech-bar {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.tech-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+}
+
+.tech-text {
+  font-size: 12.5px;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0;
+}

@@ -1,28 +1,13 @@
-import { Component, inject, signal } from '@angular/core';
-import { NgTemplateOutlet } from '@angular/common';
-import { TranslationService } from './core/i18n/translation.service';
-import { ThemeService } from './core/theme/theme.service';
+import { Component } from '@angular/core';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { PortfolioPageComponent } from './features/portfolio/portfolio-page.component';
+import { CvModalComponent } from './features/cv/components/cv-modal/cv-modal.component';
 
 @Component({
   selector: 'app-root',
-  imports: [NgTemplateOutlet],
+  imports: [HeaderComponent, PortfolioPageComponent, FooterComponent, CvModalComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {
-  protected readonly i18n = inject(TranslationService);
-  protected readonly themeService = inject(ThemeService);
-  protected readonly isCvOpen = signal(false);
-
-  openCv(): void {
-    this.isCvOpen.set(true);
-  }
-
-  closeCv(): void {
-    this.isCvOpen.set(false);
-  }
-
-  printCv(): void {
-    window.print();
-  }
-}
+export class App {}

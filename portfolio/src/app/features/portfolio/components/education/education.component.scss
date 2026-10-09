@@ -1,0 +1,148 @@
+:host {
+  display: block;
+}
+
+.section {
+  padding: 85px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.education-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 32px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.edu-column,
+.side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: var(--border-subtle);
+    transform: translateY(-2px);
+  }
+
+  &.highlight-edu {
+    border-left: 4px solid var(--primary);
+  }
+}
+
+.edu-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--primary);
+  color: #ffffff;
+  white-space: nowrap;
+
+  &.neutral {
+    background: var(--bg-surface-elevated);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+  }
+}
+
+.edu-info {
+  .edu-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15.5px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0 0 4px;
+  }
+
+  .edu-institution {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin: 0;
+  }
+}
+
+.side-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 22px 24px;
+}
+
+.side-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 14px;
+  line-height: 1.2;
+
+  .side-icon-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-color);
+    color: var(--primary);
+    flex-shrink: 0;
+
+    .side-icon {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+.lang-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+
+    strong {
+      color: var(--text-main);
+    }
+
+    span {
+      color: var(--text-muted);
+    }
+  }
+}
+
+.side-card-text {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .education-layout {
+    grid-template-columns: 1fr;
+  }
+}

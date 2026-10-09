@@ -1,0 +1,58 @@
+<section class="section container" id="expertise">
+  <app-section-heading index="01" [kicker]="i18n.translateKey('whatIBring')">
+    <span heading-title>
+      {{ i18n.translateKey('engineering').split('|')[0] }}
+      {{ i18n.translateKey('engineering').split('|')[1] }}
+      <span class="text-gradient">{{ i18n.translateKey('complexity') }}</span>
+    </span>
+  </app-section-heading>
+
+  <div class="pillars-grid">
+    <article class="pillar-card">
+      <div class="pillar-top">
+        <span class="pillar-num">01</span>
+        <div class="pillar-icon">🏛️</div>
+      </div>
+      <h3 class="pillar-title">{{ i18n.translateKey('architecture') }}</h3>
+      <p class="pillar-desc">{{ i18n.translateKey('architectureText') }}</p>
+      <div class="pillar-tags">
+        <span>Angular 21</span>
+        <span>Signals</span>
+        <span>NgRx Store</span>
+        <span>Microfrontends</span>
+        <span>Hexagonal</span>
+      </div>
+    </article>
+
+    <article class="pillar-card">
+      <div class="pillar-top">
+        <span class="pillar-num">02</span>
+        <div class="pillar-icon">⚡</div>
+      </div>
+      <h3 class="pillar-title">{{ i18n.translateKey('implementation') }}</h3>
+      <p class="pillar-desc">{{ i18n.translateKey('implementationText') }}</p>
+      <div class="pillar-tags">
+        <span>Figma to Code</span>
+        <span>Flame Design System</span>
+        <span>Copilot & Claude</span>
+        <span>Accesibilidad WCAG</span>
+      </div>
+    </article>
+
+    <article class="pillar-card">
+      <div class="pillar-top">
+        <span class="pillar-num">03</span>
+        <div class="pillar-icon">🧪</div>
+      </div>
+      <h3 class="pillar-title">{{ i18n.translateKey('quality') }}</h3>
+      <p class="pillar-desc">{{ i18n.translateKey('qualityText') }}</p>
+      <div class="pillar-tags">
+        <span>Vitest & Jest</span>
+        <span>Cypress E2E</span>
+        <span>CI/CD Actions</span>
+        <span>Clean Code / SOLID</span>
+        <span>TDD</span>
+      </div>
+    </article>
+  </div>
+</section>

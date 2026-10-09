@@ -1,0 +1,197 @@
+<header class="header">
+  <nav class="nav container" aria-label="Navegación principal">
+    <a class="brand" href="#top" [attr.aria-label]="i18n.translateKey('navHome')">
+      <span class="brand-avatar-ring">
+        <img class="brand-avatar" src="/images/profile.jpeg" alt="Roberto David Márquez Prieto" />
+        <span class="status-indicator" title="Disponible"></span>
+      </span>
+      <span class="brand-info">
+        <span class="brand-name">Roberto David</span>
+        <span class="brand-tagline">Senior Frontend & Full-Stack</span>
+      </span>
+    </a>
+
+    <div class="nav-desktop-menu">
+      <a class="nav-link" href="#expertise">{{ i18n.translateKey('navExpertise') }}</a>
+      <a class="nav-link" href="#skills">{{ i18n.translateKey('navSkills') }}</a>
+      <a class="nav-link" href="#experience">{{ i18n.translateKey('navExperience') }}</a>
+      <a class="nav-link" href="#projects">{{ i18n.translateKey('navProjects') }}</a>
+      <a class="nav-link" href="#education">{{ i18n.translateKey('navEducation') }}</a>
+
+      <button
+        type="button"
+        class="btn-cv-pill"
+        (click)="onCvClick()"
+        [attr.aria-label]="i18n.translateKey('viewCv')"
+      >
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        <span>{{ i18n.translateKey('navCv') }}</span>
+      </button>
+
+      <div class="segmented-lang" role="group" aria-label="Selector de idioma">
+        <button
+          type="button"
+          class="lang-btn"
+          [class.active]="i18n.language() === 'es'"
+          (click)="i18n.setLanguage('es')"
+          aria-label="Español"
+        >
+          ES
+        </button>
+        <button
+          type="button"
+          class="lang-btn"
+          [class.active]="i18n.language() === 'en'"
+          (click)="i18n.setLanguage('en')"
+          aria-label="English"
+        >
+          EN
+        </button>
+      </div>
+
+      <button
+        type="button"
+        class="btn-theme-toggle"
+        (click)="themeService.toggleTheme()"
+        [attr.aria-label]="i18n.translateKey('themeToggle')"
+        [title]="i18n.translateKey('themeToggle')"
+      >
+        @if (themeService.theme() === 'dark') {
+          <svg
+            class="icon theme-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        } @else {
+          <svg
+            class="icon theme-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        }
+      </button>
+
+      <a class="btn-contact-nav" href="mailto:rdavid.marquez.prieto@gmail.com">
+        <span>{{ i18n.translateKey('navTalk') }}</span>
+        <svg
+          class="icon-arrow"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Mobile Navigation Toggle -->
+    <button
+      type="button"
+      class="mobile-toggle-btn"
+      (click)="toggleMobileMenu()"
+      [attr.aria-expanded]="mobileMenuOpen()"
+      aria-label="Abrir menú"
+    >
+      @if (mobileMenuOpen()) {
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      } @else {
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      }
+    </button>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  @if (mobileMenuOpen()) {
+    <div class="mobile-drawer" (click)="closeMobileMenu()">
+      <div class="mobile-drawer-content" (click)="$event.stopPropagation()">
+        <div class="mobile-drawer-links">
+          <a class="drawer-link" href="#expertise" (click)="closeMobileMenu()">{{
+            i18n.translateKey('navExpertise')
+          }}</a>
+          <a class="drawer-link" href="#skills" (click)="closeMobileMenu()">{{
+            i18n.translateKey('navSkills')
+          }}</a>
+          <a class="drawer-link" href="#experience" (click)="closeMobileMenu()">{{
+            i18n.translateKey('navExperience')
+          }}</a>
+          <a class="drawer-link" href="#projects" (click)="closeMobileMenu()">{{
+            i18n.translateKey('navProjects')
+          }}</a>
+          <a class="drawer-link" href="#education" (click)="closeMobileMenu()">{{
+            i18n.translateKey('navEducation')
+          }}</a>
+        </div>
+        <div class="mobile-drawer-actions">
+          <button type="button" class="btn btn-secondary w-full" (click)="onCvClick()">
+            📄 {{ i18n.translateKey('viewCv') }}
+          </button>
+          <div class="mobile-drawer-toolbar">
+            <div class="segmented-lang">
+              <button
+                type="button"
+                class="lang-btn"
+                [class.active]="i18n.language() === 'es'"
+                (click)="i18n.setLanguage('es')"
+              >
+                ES
+              </button>
+              <button
+                type="button"
+                class="lang-btn"
+                [class.active]="i18n.language() === 'en'"
+                (click)="i18n.setLanguage('en')"
+              >
+                EN
+              </button>
+            </div>
+            <button type="button" class="btn-theme-toggle" (click)="themeService.toggleTheme()">
+              @if (themeService.theme() === 'dark') {
+                <span>☀️</span>
+              } @else {
+                <span>🌙</span>
+              }
+            </button>
+          </div>
+          <a
+            class="btn btn-primary w-full"
+            href="mailto:rdavid.marquez.prieto@gmail.com"
+            (click)="closeMobileMenu()"
+          >
+            {{ i18n.translateKey('startConversation') }}
+          </a>
+        </div>
+      </div>
+    </div>
+  }
+</header>

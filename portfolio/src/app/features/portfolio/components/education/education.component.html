@@ -1,0 +1,98 @@
+<section class="section container" id="education">
+  <app-section-heading index="05" [kicker]="i18n.translateKey('educationLabel')">
+    <span heading-title>
+      {{ i18n.translateKey('educationHeading') }}
+      <span class="text-gradient">{{ i18n.translateKey('educationAccent') }}</span>
+    </span>
+  </app-section-heading>
+
+  <div class="education-layout">
+    <!-- Academic Degrees -->
+    <div class="edu-column">
+      <article class="edu-card highlight-edu">
+        <span class="edu-badge">{{ i18n.translateKey('educationCurrent') }}</span>
+        <div class="edu-info">
+          <h3 class="edu-title">{{ i18n.translateKey('computerEngineering') }}</h3>
+          <p class="edu-institution">{{ i18n.translateKey('uoc') }}</p>
+        </div>
+      </article>
+
+      <article class="edu-card">
+        <span class="edu-badge neutral">CFGS</span>
+        <div class="edu-info">
+          <h3 class="edu-title">{{ i18n.translateKey('webDevelopment') }}</h3>
+          <p class="edu-institution">{{ i18n.translateKey('provençanaDaw') }}</p>
+        </div>
+      </article>
+
+      <article class="edu-card">
+        <span class="edu-badge neutral">CFGS</span>
+        <div class="edu-info">
+          <h3 class="edu-title">{{ i18n.translateKey('multiplatformDevelopment') }}</h3>
+          <p class="edu-institution">{{ i18n.translateKey('provençanaDam') }}</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Languages & Licenses -->
+    <div class="side-column">
+      <div class="side-card">
+        <h3 class="side-card-title">
+          <span class="side-icon-badge">
+            <svg
+              class="side-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+              ></path>
+            </svg>
+          </span>
+          <span>{{ i18n.translateKey('languagesTitle') }}</span>
+        </h3>
+        <ul class="lang-list">
+          <li>
+            <strong>{{ i18n.translateKey('langSpanish') }}:</strong>
+            <span>{{ i18n.translateKey('langSpanishLevel') }}</span>
+          </li>
+          <li>
+            <strong>{{ i18n.translateKey('langCatalan') }}:</strong>
+            <span>{{ i18n.translateKey('langCatalanLevel') }}</span>
+          </li>
+          <li>
+            <strong>{{ i18n.translateKey('langEnglish') }}:</strong>
+            <span>{{ i18n.translateKey('langEnglishLevel') }}</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <h3 class="side-card-title">
+          <span class="side-icon-badge">
+            <svg
+              class="side-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 3c-.1.3-.1.6-.1.8v5.3c0 .6.4 1 1 1h2"
+              ></path>
+              <circle cx="7" cy="17" r="2"></circle>
+              <path d="M9 17h6"></path>
+              <circle cx="17" cy="17" r="2"></circle>
+            </svg>
+          </span>
+          <span>{{ i18n.translateKey('licensesTitle') }}</span>
+        </h3>
+        <p class="side-card-text">{{ i18n.translateKey('licensesDesc') }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+<section class="contact-cta container">
+  <div class="cta-inner">
+    <div class="status-badge-inline">
+      <span class="pulsing-dot"></span>
+      <span>{{ i18n.translateKey('project') }}</span>
+    </div>
+
+    <h2 class="cta-heading">
+      {{ i18n.translateKey('meaningful') }}<br />
+      <span class="text-gradient">{{ i18n.translateKey('meaningfulAccent') }}</span>
+    </h2>
+
+    <p class="cta-subtext">
+      Disponible para proyectos estratégicos de frontend, liderazgo técnico y consultoría en
+      arquitecturas Angular / Microfrontends.
+    </p>
+
+    <div class="cta-actions">
+      <a href="mailto:rdavid.marquez.prieto@gmail.com" class="btn btn-primary btn-lg">
+        <span>rdavid.marquez.prieto&#64;gmail.com</span>
+        <svg
+          class="icon-arrow"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </a>
+
+      <button type="button" class="btn btn-outline btn-lg" (click)="onCvClick()">
+        <svg
+          class="btn-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        <span>{{ i18n.translateKey('viewCv') }}</span>
+      </button>
+
+      <button type="button" class="btn btn-ghost btn-lg" (click)="copyEmail()" title="Copiar email">
+        @if (emailCopied()) {
+          <svg
+            class="btn-icon success-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <span>¡Email copiado!</span>
+        } @else {
+          <svg
+            class="btn-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Copiar email</span>
+        }
+      </button>
+    </div>
+  </div>
+</section>

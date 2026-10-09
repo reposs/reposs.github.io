@@ -1,0 +1,132 @@
+<section class="hero container" id="top">
+  <div class="hero-content">
+    <div class="status-badge">
+      <span class="pulsing-dot"></span>
+      <span>{{ i18n.translateKey('available') }}</span>
+    </div>
+
+    <h1 class="hero-title">
+      {{ i18n.translateKey('headline') }}
+      <span class="text-gradient">{{ i18n.translateKey('headlineAccent') }}</span>
+    </h1>
+
+    <p class="hero-description">
+      {{ i18n.translateKey('intro') }}
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="mailto:rdavid.marquez.prieto@gmail.com">
+        <span>{{ i18n.translateKey('startConversation') }}</span>
+        <svg
+          class="icon-arrow"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </a>
+
+      <button type="button" class="btn btn-outline" (click)="onCvClick()">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        <span>{{ i18n.translateKey('viewCv') }}</span>
+      </button>
+    </div>
+
+    <div class="quick-contact-row">
+      <button
+        type="button"
+        class="chip-copy-email"
+        (click)="copyEmail()"
+        title="Copiar email al portapapeles"
+      >
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span>rdavid.marquez.prieto&#64;gmail.com</span>
+        @if (emailCopied()) {
+          <span class="copy-badge">✓ ¡Copiado!</span>
+        }
+      </button>
+
+      <a
+        class="social-pill"
+        href="https://www.linkedin.com/in/roberto-david-marquez-prieto-5bab6a77"
+        target="_blank"
+        rel="noopener"
+        title="LinkedIn"
+      >
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+          ></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+
+      <a
+        class="social-pill"
+        href="https://github.com/reposs"
+        target="_blank"
+        rel="noopener"
+        title="GitHub"
+      >
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+          ></path>
+        </svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Profile Card -->
+  <aside class="hero-profile-card" aria-label="Tarjeta de perfil profesional">
+    <div class="card-glass-header">
+      <div class="card-location">
+        <span class="geo-pin">📍</span>
+        <span>{{ i18n.translateKey('location') }}</span>
+      </div>
+      <span class="card-est-badge">EXP. 2012 — 2026</span>
+    </div>
+
+    <div class="card-avatar-wrapper">
+      <div class="avatar-glow"></div>
+      <img
+        class="card-avatar-img"
+        src="/images/profile.jpeg"
+        alt="Roberto David Márquez Prieto - Senior Frontend Developer"
+      />
+      <div class="online-tag">
+        <span class="online-pulse"></span>
+        <span>Senior Full-Stack</span>
+      </div>
+    </div>
+
+    <div class="card-profile-body">
+      <h2 class="card-name">Roberto David Márquez</h2>
+      <p class="card-role">{{ i18n.translateKey('role') }}</p>
+
+      <div class="card-chips">
+        <span class="chip-tech highlight">Angular v2–v21</span>
+        <span class="chip-tech">Microfrontends</span>
+        <span class="chip-tech">Signals & NgRx</span>
+        <span class="chip-tech">NestJS</span>
+        <span class="chip-tech">Hexagonal</span>
+        <span class="chip-tech highlight-ai">Copilot & Claude AI</span>
+      </div>
+    </div>
+  </aside>
+</section>

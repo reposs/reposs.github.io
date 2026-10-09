@@ -1,0 +1,143 @@
+:host {
+  display: block;
+}
+
+.contact-cta {
+  padding: 80px 0 100px;
+}
+
+.cta-inner {
+  background: linear-gradient(135deg, var(--bg-surface-elevated) 0%, var(--bg-card) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 60px 48px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.status-badge-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+}
+
+.pulsing-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+}
+
+.cta-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(32px, 3.8vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  line-height: 1.15;
+  margin: 4px 0 0;
+}
+
+.cta-subtext {
+  max-width: 580px;
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid transparent;
+
+  .btn-icon,
+  .icon-arrow {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  .success-icon {
+    color: var(--accent-emerald);
+  }
+}
+
+.btn-primary {
+  background: var(--text-main);
+  color: var(--bg-body);
+  border-color: var(--text-main);
+
+  &:hover {
+    opacity: 0.92;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.btn-outline {
+  background: var(--bg-surface);
+  color: var(--text-main);
+  border-color: var(--border-color);
+
+  &:hover {
+    background: var(--bg-surface-elevated);
+    border-color: var(--border-subtle);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--border-color);
+
+  &:hover {
+    background: var(--bg-surface-elevated);
+    color: var(--text-main);
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-inner {
+    padding: 40px 20px;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

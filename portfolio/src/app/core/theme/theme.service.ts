@@ -1,9 +1,10 @@
 import { DOCUMENT } from '@angular/common';
 import { Injectable, inject, signal } from '@angular/core';
+import { AppTheme } from './theme.model';
 
-export type AppTheme = 'light' | 'dark';
+export type { AppTheme };
 
-/** Manages dark/light theme state and syncs with localStorage and document element. */
+/** Manages dark/light theme state and syncs with localStorage and document element. Defaults to dark mode. */
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
   private readonly document = inject(DOCUMENT);
@@ -35,13 +36,9 @@ export class ThemeService {
 
   private getInitialTheme(): AppTheme {
     const savedTheme = localStorage.getItem(this.storageKey);
-    if (savedTheme === 'dark' || savedTheme === 'light') {
+    if (savedTheme === 'light' || savedTheme === 'dark') {
       return savedTheme;
     }
-    return typeof window !== 'undefined' &&
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light';
+    return 'dark';
   }
 }

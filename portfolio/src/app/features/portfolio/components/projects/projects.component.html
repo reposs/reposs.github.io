@@ -1,0 +1,197 @@
+<section class="section container" id="projects">
+  <app-section-heading
+    index="04"
+    [kicker]="i18n.translateKey('projectsLabel')"
+    [subtitle]="i18n.translateKey('projectsIntro')"
+  >
+    <span heading-title>
+      {{ i18n.translateKey('projectsHeading') }}
+      <span class="text-gradient">{{ i18n.translateKey('projectsAccent') }}</span>
+    </span>
+  </app-section-heading>
+
+  <div class="projects-grid">
+    <!-- Demo Angular -->
+    <article class="project-card">
+      <div class="project-header">
+        <span class="project-index">01 / Frontend</span>
+        <span class="project-status-badge">
+          <span class="status-dot-green"></span>
+          {{ i18n.translateKey('liveProject') }}
+        </span>
+      </div>
+
+      <h3 class="project-title">Demo Angular</h3>
+      <p class="project-desc">{{ i18n.translateKey('angularDemoText') }}</p>
+
+      <div class="project-tech-tags">
+        <span>Angular 21</span>
+        <span>Signals</span>
+        <span>Hexagonal Arch</span>
+        <span>TypeScript</span>
+      </div>
+
+      <div class="project-actions">
+        <a
+          class="btn-project primary"
+          href="https://reposs.github.io/demo-angular/"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>{{ i18n.translateKey('tryDemo') }}</span>
+          <svg
+            class="icon-arrow"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        <a
+          class="btn-project secondary"
+          href="https://github.com/reposs/demo-angular"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>{{ i18n.translateKey('viewCode') }}</span>
+          <svg
+            class="icon-sm"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Demo NestJS -->
+    <article class="project-card">
+      <div class="project-header">
+        <span class="project-index">02 / Backend API</span>
+        <span class="project-status-badge">
+          <span class="status-dot-green"></span>
+          {{ i18n.translateKey('liveProject') }}
+        </span>
+      </div>
+
+      <h3 class="project-title">Demo NestJS</h3>
+      <p class="project-desc">{{ i18n.translateKey('nestjsDemoText') }}</p>
+
+      <div class="project-tech-tags">
+        <span>NestJS</span>
+        <span>PostgreSQL</span>
+        <span>Swagger API</span>
+        <span>JWT Auth</span>
+      </div>
+
+      <div class="project-actions">
+        <a
+          class="btn-project primary"
+          href="https://demo-nestjs-myw0.onrender.com/api"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>{{ i18n.translateKey('tryApi') }}</span>
+          <svg
+            class="icon-arrow"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        <a
+          class="btn-project secondary"
+          href="https://github.com/reposs/demo-nestjs"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>{{ i18n.translateKey('viewCode') }}</span>
+          <svg
+            class="icon-sm"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- FastAPI Demo -->
+    <article class="project-card">
+      <div class="project-header">
+        <span class="project-index">03 / Microservicio</span>
+        <span class="project-status-badge">
+          <span class="status-dot-green"></span>
+          {{ i18n.translateKey('liveProject') }}
+        </span>
+      </div>
+
+      <h3 class="project-title">FastAPI Python Demo</h3>
+      <p class="project-desc">{{ i18n.translateKey('fastApiDemoText') }}</p>
+
+      <div class="project-tech-tags">
+        <span>FastAPI</span>
+        <span>Python</span>
+        <span>SQLAlchemy</span>
+        <span>OpenAPI Docs</span>
+      </div>
+
+      <div class="project-actions">
+        <a
+          class="btn-project primary"
+          href="https://fastapi-demo-1373c10f.fastapicloud.dev/docs"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>{{ i18n.translateKey('tryApi') }}</span>
+          <svg
+            class="icon-arrow"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        <a
+          class="btn-project secondary"
+          href="https://github.com/reposs/fastApi-demo"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>{{ i18n.translateKey('viewCode') }}</span>
+          <svg
+            class="icon-sm"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>

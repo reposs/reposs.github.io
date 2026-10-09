@@ -1,0 +1,125 @@
+<section class="section container" id="skills">
+  <app-section-heading
+    index="02"
+    [kicker]="i18n.translateKey('skillsLabel')"
+    [subtitle]="i18n.translateKey('skillsIntro')"
+  >
+    <span heading-title>
+      {{ i18n.translateKey('skillsHeading') }}
+      <span class="text-gradient">{{ i18n.translateKey('skillsAccent') }}</span>
+    </span>
+  </app-section-heading>
+
+  <div class="skills-grid">
+    <!-- Frontend -->
+    <article class="skill-card">
+      <div class="skill-header">
+        <div class="skill-icon-badge">🎨</div>
+        <h3 class="skill-title">{{ i18n.translateKey('skillFrontendTitle') }}</h3>
+      </div>
+      <p class="skill-desc">{{ i18n.translateKey('skillFrontendDesc') }}</p>
+      <div class="skill-pills">
+        <span class="pill highlight">Angular (v2–v21)</span>
+        <span class="pill highlight">TypeScript</span>
+        <span class="pill highlight">Microfrontends</span>
+        <span class="pill">Module Federation</span>
+        <span class="pill">Signals & RxJS</span>
+        <span class="pill">NgRx Store</span>
+        <span class="pill">SCSS / SASS</span>
+        <span class="pill">Flame DS</span>
+        <span class="pill">WCAG 2.1 AA</span>
+      </div>
+    </article>
+
+    <!-- Backend & APIs -->
+    <article class="skill-card">
+      <div class="skill-header">
+        <div class="skill-icon-badge">⚙️</div>
+        <h3 class="skill-title">{{ i18n.translateKey('skillBackendTitle') }}</h3>
+      </div>
+      <p class="skill-desc">{{ i18n.translateKey('skillBackendDesc') }}</p>
+      <div class="skill-pills">
+        <span class="pill highlight">Node.js</span>
+        <span class="pill highlight">NestJS</span>
+        <span class="pill">FastAPI (Python)</span>
+        <span class="pill">Express</span>
+        <span class="pill">Arquitectura Hexagonal</span>
+        <span class="pill">DDD</span>
+        <span class="pill">REST APIs</span>
+        <span class="pill">Swagger / OpenAPI</span>
+      </div>
+    </article>
+
+    <!-- Bases de Datos -->
+    <article class="skill-card">
+      <div class="skill-header">
+        <div class="skill-icon-badge">🗄️</div>
+        <h3 class="skill-title">{{ i18n.translateKey('skillDbTitle') }}</h3>
+      </div>
+      <p class="skill-desc">{{ i18n.translateKey('skillDbDesc') }}</p>
+      <div class="skill-pills">
+        <span class="pill highlight">PostgreSQL</span>
+        <span class="pill highlight">MongoDB</span>
+        <span class="pill">MySQL</span>
+        <span class="pill">Oracle</span>
+        <span class="pill">TypeORM</span>
+        <span class="pill">Prisma</span>
+        <span class="pill">Mongoose</span>
+        <span class="pill">Modelado ER</span>
+      </div>
+    </article>
+
+    <!-- Testing & Calidad -->
+    <article class="skill-card">
+      <div class="skill-header">
+        <div class="skill-icon-badge">🧪</div>
+        <h3 class="skill-title">{{ i18n.translateKey('skillTestingTitle') }}</h3>
+      </div>
+      <p class="skill-desc">{{ i18n.translateKey('skillTestingDesc') }}</p>
+      <div class="skill-pills">
+        <span class="pill highlight">Vitest</span>
+        <span class="pill highlight">Jest</span>
+        <span class="pill highlight">Cypress (E2E)</span>
+        <span class="pill">Jasmine / Karma</span>
+        <span class="pill">TDD</span>
+        <span class="pill">SonarQube</span>
+        <span class="pill">Clean Code</span>
+        <span class="pill">SOLID</span>
+      </div>
+    </article>
+
+    <!-- DevOps & Herramientas -->
+    <article class="skill-card">
+      <div class="skill-header">
+        <div class="skill-icon-badge">🚀</div>
+        <h3 class="skill-title">{{ i18n.translateKey('skillDevopsTitle') }}</h3>
+      </div>
+      <p class="skill-desc">{{ i18n.translateKey('skillDevopsDesc') }}</p>
+      <div class="skill-pills">
+        <span class="pill highlight">Docker</span>
+        <span class="pill">Git / GitHub Actions</span>
+        <span class="pill">Jenkins</span>
+        <span class="pill">Vite / Webpack</span>
+        <span class="pill">Angular CLI</span>
+        <span class="pill">Postman</span>
+        <span class="pill">Linux</span>
+      </div>
+    </article>
+
+    <!-- IA para Desarrollo -->
+    <article class="skill-card ai-special-card">
+      <div class="skill-header">
+        <div class="skill-icon-badge">🤖</div>
+        <h3 class="skill-title">{{ i18n.translateKey('skillAiTitle') }}</h3>
+      </div>
+      <p class="skill-desc">{{ i18n.translateKey('skillAiDesc') }}</p>
+      <div class="skill-pills">
+        <span class="pill highlight-ai">GitHub Copilot (Agentes)</span>
+        <span class="pill highlight-ai">Claude Code</span>
+        <span class="pill highlight-ai">Codex</span>
+        <span class="pill">Refactorización asistida</span>
+        <span class="pill">Documentación técnica</span>
+      </div>
+    </article>
+  </div>
+</section>
