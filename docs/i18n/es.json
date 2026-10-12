@@ -103,6 +103,7 @@
   "angularDemoText": "Aplicación Angular 21 moderna implementando arquitectura hexagonal, Signals, componentes standalone y UI responsive de alto rendimiento.",
   "nestjsDemoText": "API modular en NestJS con TypeScript, persistencia en PostgreSQL, autenticación y documentación interactiva mediante Swagger/OpenAPI.",
   "fastApiDemoText": "Microservicio en Python FastAPI con autenticación JWT, modelos SQLAlchemy, validación Pydantic y documentación interactiva OpenAPI.",
+  "rdCustoMusicText": "Estación de producción musical y mesa de mezclas en tiempo real para música electrónica. Incluye doble plato vinilo, sintetizador TB-303, secuenciador 909 y sampler RGB con Web Audio API y Angular Signals.",
   "educationLabel": "Formación & Idiomas",
   "educationHeading": "Fundamentos sólidos,",
   "educationAccent": "aprendizaje continuo.",

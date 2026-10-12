@@ -103,6 +103,7 @@
   "angularDemoText": "Production-grade Angular 21 application built with Hexagonal Architecture, Signals, standalone components, and responsive performance.",
   "nestjsDemoText": "Modular NestJS API with TypeScript, PostgreSQL persistence, authentication, and live interactive Swagger/OpenAPI documentation.",
   "fastApiDemoText": "FastAPI Python microservice featuring JWT authentication, SQLAlchemy ORM models, Pydantic validation, and OpenAPI documentation.",
+  "rdCustoMusicText": "Real-time Digital Audio Workstation (DAW) and DJ mixer for electronic music. Features dual vinyl decks, TB-303 synthesizer, 909 step sequencer, and RGB sampler powered by Web Audio API and Angular Signals.",
   "educationLabel": "Education & Languages",
   "educationHeading": "Rigorous foundations,",
   "educationAccent": "lifelong evolution.",
