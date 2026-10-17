@@ -379,9 +379,10 @@
     print-color-adjust: exact !important;
   }
 
-  header,
-  main,
-  footer,
+  app-header,
+  main#main-content,
+  main.portfolio-main,
+  app-footer,
   .header,
   .cv-modal-backdrop,
   .cv-modal-header,
@@ -402,6 +403,11 @@
     color: #000000 !important;
     font-size: 9.2pt !important;
     line-height: 1.35 !important;
+
+    .cv-header {
+      display: block !important;
+      margin-bottom: 12pt !important;
+    }
 
     .cv-photo-wrapper {
       display: flex !important;

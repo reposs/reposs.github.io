@@ -480,9 +480,10 @@ html.dark-mode {
     print-color-adjust: exact !important;
   }
 
-  header,
-  main,
-  footer,
+  app-header,
+  main#main-content,
+  main.portfolio-main,
+  app-footer,
   .header,
   .cv-modal-backdrop,
   .cv-modal-header,
@@ -504,27 +505,26 @@ html.dark-mode {
     font-size: 9.2pt !important;
     line-height: 1.35 !important;
 
-    .cv-photo-wrapper {
-      display: flex !important;
-      justify-content: center !important;
-      margin-bottom: 8pt !important;
-    }
-
-    .cv-photo {
-      width: 95px !important;
-      height: 120px !important;
-      border: 1px solid #94a3b8 !important;
-      box-shadow: none !important;
+    .cv-header {
       display: block !important;
-      -webkit-print-color-adjust: exact !important;
-      print-color-adjust: exact !important;
+      margin-bottom: 12pt !important;
     }
 
     .cv-name {
       font-size: 16.5pt !important;
       color: #1e3a8a !important;
-      margin: 0 0 4pt !important;
+      margin: 0 0 3pt !important;
       letter-spacing: -0.01em !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    .cv-role-headline {
+      font-size: 8.8pt !important;
+      font-weight: 700 !important;
+      color: #1e3a8a !important;
+      margin: 0 0 5pt !important;
+      line-height: 1.3 !important;
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
     }
