@@ -163,9 +163,17 @@
     line-height: 1.2;
     font-weight: 800;
     letter-spacing: -0.01em;
-    margin: 0 0 10px;
+    margin: 0 0 6px;
     color: #1e3a8a;
     text-transform: uppercase;
+  }
+
+  .cv-role-headline {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 0 0 10px;
+    line-height: 1.4;
   }
 
   .cv-contact-info {
@@ -271,6 +279,10 @@
       color: #60a5fa;
     }
 
+    .cv-role-headline {
+      color: #93c5fd;
+    }
+
     .cv-contact-line {
       color: #cbd5e1;
 
@@ -318,6 +330,10 @@
       }
     }
   }
+}
+
+.cv-page-break {
+  display: none;
 }
 
 /* Hide non-modal printable wrapper on regular screens */
@@ -406,8 +422,18 @@
     .cv-name {
       font-size: 16.5pt !important;
       color: #1e3a8a !important;
-      margin: 0 0 4pt !important;
+      margin: 0 0 3pt !important;
       letter-spacing: -0.01em !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    .cv-role-headline {
+      font-size: 8.8pt !important;
+      font-weight: 700 !important;
+      color: #1e3a8a !important;
+      margin: 0 0 5pt !important;
+      line-height: 1.3 !important;
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
     }
@@ -425,6 +451,15 @@
         color: #1d4ed8 !important;
         text-decoration: underline !important;
       }
+    }
+
+    .cv-page-break {
+      display: block !important;
+      break-before: page !important;
+      page-break-before: always !important;
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     .cv-section {

@@ -1,4 +1,4 @@
-# Roberto David · Senior Frontend Developer & Full-Stack Architect
+# Roberto David · Senior Frontend Developer (Angular) | Full Stack · TypeScript · Node.js · NestJS · Microfrontends · Arquitectura Hexagonal
 > **Sitio en producción / Live Site**: [https://reposs.github.io](https://reposs.github.io)
 
 ---

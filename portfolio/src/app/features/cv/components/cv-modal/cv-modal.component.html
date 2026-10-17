@@ -57,21 +57,21 @@
   <ng-container *ngTemplateOutlet="cvContent"></ng-container>
 </div>
 
-<!-- Reusable CV Document Template matching NEW_RDavid_Marquez_Prieto_CV.pdf structure & order -->
+<!-- Reusable CV Document Template matching the exact structure and order of the official 2-page CV -->
 <ng-template #cvContent>
   <article class="cv-document">
-    <!-- Centered Photo -->
-    <div class="cv-photo-wrapper">
-      <img src="/images/profile.jpeg" alt="Roberto David Márquez Prieto" class="cv-photo" />
-    </div>
-
-    <!-- Header info matching page 1 of new CV -->
+    <!-- Header info matching page 1 of official CV -->
     <header class="cv-header">
       <h1 class="cv-name">ROBERTO DAVID MÁRQUEZ PRIETO</h1>
+      <p class="cv-role-headline">
+        Senior Frontend Developer (Angular) | Full Stack · TypeScript · Node.js · NestJS ·
+        Microfrontends · Arquitectura Hexagonal
+      </p>
       <div class="cv-contact-info">
+        <p class="cv-contact-line">Hospitalet de Llobregat (Barcelona), España</p>
         <p class="cv-contact-line">
-          Hospitalet de Llobregat - Barcelona, España | +34 633582744 |
-          rdavid.marquez.prieto&#64;gmail.com
+          Teléfono: +34 633 582 744 | Email:
+          <a href="mailto:rdavid.marquez.prieto@gmail.com">rdavid.marquez.prieto&#64;gmail.com</a>
         </p>
         <p class="cv-contact-line">
           LinkedIn:
@@ -92,224 +92,197 @@
             >https://reposs.github.io</a
           >
         </p>
-        <p class="cv-contact-line">Licencias de conducir: A, B, BTP</p>
       </div>
     </header>
 
-    <!-- 1. Formación Académica (Same order as PDF) -->
-    <section class="cv-section">
-      <h2>Formación Académica</h2>
-      <ul class="cv-bullet-list">
-        <li>
-          <strong>Grado en Ingeniería Informática</strong> - Universidad Oberta de Catalunya (UOC),
-          Barcelona (2025 - cursando)
-        </li>
-        <li>
-          <strong>Técnico Superior en Desarrollo de Aplicaciones Web (DAW)</strong> - IES Provençana
-          (2013-2014)
-        </li>
-        <li>
-          <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> -
-          IES Provençana (2011 - 2012)
-        </li>
-      </ul>
-    </section>
-
-    <!-- 2. Idiomas (Same order as PDF) -->
-    <section class="cv-section">
-      <h2>Idiomas</h2>
-      <ul class="cv-bullet-list">
-        <li><strong>Español:</strong> Competencia bilingüe o nativa</li>
-        <li><strong>Catalán:</strong> Competencia intermedia profesional</li>
-        <li><strong>Inglés:</strong> Competencia básica profesional</li>
-      </ul>
-    </section>
-
-    <!-- 3. Resumen Profesional (Same order as PDF) -->
+    <!-- Resumen Profesional -->
     <section class="cv-section">
       <h2>Resumen Profesional</h2>
       <p class="cv-summary-text">
-        <strong>Desarrollador Senior Full Stack</strong> con más de 12 años de experiencia liderando
-        el diseño, arquitectura y desarrollo de aplicaciones web de alta disponibilidad y nivel
-        empresarial. Especializado en el ecosistema
-        <strong>TypeScript / JavaScript</strong> (<strong>Angular v2–v21</strong>,
-        <strong>Node.js</strong>, <strong>NestJS</strong>, <strong>Express</strong>,
-        <strong>RxJS</strong>), con sólida trayectoria en arquitecturas de
-        <strong>Microfrontends</strong> y <strong>Microservicios</strong> para el sector bancario
-        (<strong>Banco Santander</strong>, <strong>Banco Sabadell</strong>) y proyectos europeos de
-        I+D. Dominio integral del ciclo de vida del software (E2E), arquitectura hexagonal, diseño
-        de APIs REST/SOAP, testing de alta cobertura (TDD), integración de IA para desarrollo y
-        automatización CI/CD.
+        <strong
+          >Senior Frontend Developer (Angular) con perfil Full Stack y más de 14 años de
+          experiencia</strong
+        >
+        diseñando, arquitectando y desarrollando aplicaciones web empresariales de alta
+        disponibilidad. Me especializo en
+        <strong>TypeScript y JavaScript (Angular 2 a 21, Node.js, NestJS, Express, RxJS)</strong> y
+        he trabajado en arquitecturas de
+        <strong>Microfrontends (Micro Frontends) y Microservicios</strong> para el
+        <strong>sector bancario (Banco Santander, Banco Sabadell)</strong> y en proyectos europeos
+        de I+D. Domino el ciclo de vida completo del software (E2E), la
+        <strong>Arquitectura Hexagonal</strong>, el diseño de <strong>APIs REST y SOAP</strong>, el
+        testing automatizado (TDD/BDD, Jest, Karma) y el
+        <strong>CI/CD (Jenkins, GitHub Actions, GitLab CI)</strong>. Utilizo
+        <strong>IA generativa (GitHub Copilot, Claude Code, Codex)</strong> para acelerar el
+        desarrollo. Trabajo en equipos Agile/Scrum, con code reviews, mentoring técnico y
+        comunicación con negocio.
       </p>
     </section>
 
-    <!-- 4. Competencias Técnicas (Ends Page 1 in PDF) -->
+    <!-- Competencias Técnicas -->
     <section class="cv-section">
       <h2>Competencias Técnicas</h2>
       <ul class="cv-bullet-list">
         <li>
-          <strong>Frontend & Frameworks:</strong> Angular (v2 – v21: Standalone, Signals, RxJS, NgRx
-          / Signal Store), AngularJS (1.x), Microfrontends, Web Components, React, jQuery, HTML5,
-          CSS3, Sass, Less, Responsive Design, i18n (Internacionalización).
+          <strong>Frontend:</strong> Angular (2 a 21: Standalone Components, Signals, RxJS, NgRx,
+          Signal Store), TypeScript, JavaScript, AngularJS, Microfrontends (Micro Frontends), Web
+          Components, React, jQuery, HTML5, CSS3, Sass, Less, Responsive Design, i18n.
         </li>
         <li>
-          <strong>Backend & Arquitectura:</strong> Node.js, NestJS, Express, Python (Django,
-          Falcon), PHP (Laravel, CodeIgniter, Zend 1/2), Arquitectura Hexagonal, CQRS,
-          Microservicios, REST APIs, SOAP, WebSockets / Socket.IO.
+          <strong>Backend y Arquitectura:</strong> Node.js, NestJS, Express, Python (Django,
+          Falcon), PHP (Laravel, CodeIgniter, Zend), Arquitectura Hexagonal, CQRS, Microservicios,
+          REST API, SOAP, WebSockets, Socket.IO.
         </li>
         <li>
-          <strong>Bases de Datos y Caché:</strong> PostgreSQL, MySQL, TypeORM (Migrations),
-          Memcached, Redis.
+          <strong>Bases de datos y caché:</strong> PostgreSQL, MySQL, TypeORM (Migrations), Redis,
+          Memcached.
         </li>
         <li>
-          <strong>Geolocalización y Visualización de Datos:</strong> Google Maps API, Chart.js,
-          D3.js.
+          <strong>Testing y calidad:</strong> Jest, Karma, Jasmine, SoapUI, TDD, BDD, Unit Testing,
+          Integration Testing, SonarQube, Fortify, Clean Code, Code Review.
         </li>
         <li>
-          <strong>Testing, Calidad y Seguridad:</strong> Jest, Karma, Jasmine, SoapUI, TDD / BDD,
-          SonarQube, Fortify, Clean Code.
+          <strong>DevOps y Cloud:</strong> CI/CD, Jenkins, GitHub Actions, GitLab CI/CD, Docker,
+          Docker Swarm, Kubernetes, Google Cloud Platform (GCP), Git, GitHub, GitLab, Webpack.
         </li>
         <li>
-          <strong>DevOps, Cloud y Herramientas:</strong> Docker, Docker Swarm, Kubernetes, Google
-          Cloud Platform (GCP), GitLab CI/CD, GitHub Actions, Jenkins, Git, SVN, Webpack.
+          <strong>Metodologías y herramientas:</strong> Agile, Scrum, Kanban, Jira, Confluence,
+          Figma, Documentación técnica.
         </li>
+        <li><strong>IA para desarrollo:</strong> GitHub Copilot (Agentes), Claude Code, Codex.</li>
         <li>
-          <strong>IA para Desarrollo & Productividad:</strong> GitHub Copilot (Agentes), Claude
-          Code, Codex.
+          <strong>UI/UX y visualización:</strong> Angular Material, Bootstrap, Foundation, Flame
+          (sistema de diseño), Google Maps API, Chart.js, D3.js.
         </li>
-        <li>
-          <strong>Diseño UI/UX y E-commerce:</strong> Figma (Análisis técnico), Photoshop, Angular
-          Material, Bootstrap, Foundation, Flame (Sistema de diseño), Magento, PrestaShop,
-          WordPress.
-        </li>
+        <li><strong>E-commerce y CMS:</strong> Magento, PrestaShop, WordPress.</li>
       </ul>
     </section>
 
-    <!-- 5. Experiencia Profesional (Page 2 in PDF - with clean page-break in print) -->
-    <section class="cv-section cv-page-break">
+    <!-- Experiencia Profesional (Page 1) -->
+    <section class="cv-section">
       <h2>Experiencia Profesional</h2>
 
-      <!-- GFT -->
+      <!-- GFT Technologies (Banco Sabadell) -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Senior Frontend Developer</strong> -
+          <strong>Senior Frontend Developer</strong> |
           <span class="cv-job-company">GFT Technologies (Banco Sabadell)</span> |
-          <span class="cv-job-period">Abril 2026 - Agosto 2026</span>
+          <span class="cv-job-period">04/2026 - 08/2026</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            Analizar y definir la arquitectura técnica de nuevos desarrollos frontend sobre el
-            aplicativo bancario, traduciendo requisitos funcionales en soluciones robustas bajo
+            Analizar y definir la arquitectura técnica de nuevos desarrollos frontend en Angular
+            sobre el aplicativo bancario, traduciendo requisitos funcionales en soluciones bajo
             Arquitectura Hexagonal.
           </li>
           <li>
-            Elaborar Documentos Técnicos (DTs) de detalle arquitectónico, especificando la solución,
-            componentes, flujos e integraciones a partir del análisis de código legacy y diseños en
-            Figma.
+            Elaborar Documentos Técnicos (DT) de detalle arquitectónico con solución, componentes,
+            flujos e integraciones, a partir del análisis de código legacy y diseños en Figma.
           </li>
           <li>
-            Auditar el código y revisar los componentes implicados para garantizar el cumplimiento
-            de los estándares de arquitectura y buenas prácticas del banco previo a la
-            implementación.
+            Auditar código y revisar componentes (code review) para garantizar el cumplimiento de
+            los estándares de arquitectura y buenas prácticas del banco antes de la implementación.
           </li>
           <li>
-            Integrar herramientas de Inteligencia Artificial (Copilot, Codex, Claude Code) para
-            acelerar el análisis de código, la elaboración de documentación técnica y los flujos de
-            trabajo en el entorno Angular.
+            Integrar IA generativa (GitHub Copilot, Codex, Claude Code) para acelerar el análisis de
+            código y la documentación técnica en el entorno Angular.
           </li>
         </ul>
       </div>
 
-      <!-- Plexus -->
+      <!-- Plexus Tech (Banco Santander) -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Senior Frontend Developer</strong> -
+          <strong>Senior Frontend Developer</strong> |
           <span class="cv-job-company">Plexus Tech (Banco Santander)</span> |
-          <span class="cv-job-period">Octubre 2023 - Marzo 2026</span>
+          <span class="cv-job-period">10/2023 - 03/2026</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
             Desarrollar e integrar Microfrontends y Web Components sobre una arquitectura
             distribuida para Banco Santander, conectando múltiples APIs RESTful con el sistema de
-            diseño corporativo (Flame).
+            diseño corporativo Flame.
           </li>
           <li>
-            Implementar soluciones en Angular Moderno (cobertura desde v2 hasta v21), aplicando
-            Standalone Components, Signals para reactividad y gestión de estado complejo con NgRx
-            (Store, Effects, Selectors, Signal Store).
+            Implementar soluciones en Angular moderno (v2 a v21) con Standalone Components, Signals
+            y gestión de estado con NgRx (Store, Effects, Selectors, Signal Store).
           </li>
           <li>
-            Diseñar y ejecutar pruebas automáticas (unitarias, de integración y de componentes con
-            Jest, Karma y Jasmine) bajo metodologías TDD/BDD, aumentando la cobertura y garantizando
-            estándares de calidad con SonarQube y Fortify.
+            Diseñar y ejecutar tests unitarios, de integración y de componentes (Jest, Karma,
+            Jasmine) con TDD/BDD, elevando la cobertura de 70% a 95% y cumpliendo los estándares de
+            calidad de SonarQube y Fortify.
           </li>
           <li>
-            Promover buenas prácticas y entrega continua: realizar revisiones de código (code
-            reviews), optimizar pipelines CI/CD (Jenkins, GitHub Actions) e impulsar el desarrollo
-            mediante IA (Agentes en GitHub Copilot).
+            Optimizar pipelines CI/CD (Jenkins, GitHub Actions), realizar code reviews y promover el
+            desarrollo asistido por IA (agentes de GitHub Copilot) dentro de un equipo Agile/Scrum
+            de 5 personas.
           </li>
         </ul>
       </div>
+    </section>
 
-      <!-- IRIS -->
+    <!-- Page Break for Clean 2-Page Print Layout -->
+    <div class="cv-page-break"></div>
+
+    <!-- Experiencia Profesional (Page 2) -->
+    <section class="cv-section cv-page-2">
+      <!-- IRIS Technology Group -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Full-Stack Developer</strong> -
+          <strong>Full Stack Developer</strong> |
           <span class="cv-job-company">IRIS Technology Group</span> |
-          <span class="cv-job-period">Mayo 2018 - Octubre 2023</span>
+          <span class="cv-job-period">05/2018 - 10/2023</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            Diseñar y desarrollar la arquitectura Full-Stack de múltiples proyectos europeos de I+D
-            (UE), utilizando Angular (RxJS, Material, DevExtreme, i18n) en frontend y microservicios
-            con Node.js (NestJS, Express) y Python (Django, Falcon) en backend.
+            Diseñar y desarrollar la arquitectura Full Stack de proyectos europeos de I+D (UE):
+            Angular (RxJS, Angular Material, DevExtreme, i18n) en frontend y microservicios con
+            Node.js (NestJS, Express) y Python (Django, Falcon) en backend.
           </li>
           <li>
-            Implementar interfaces web complejas e interactivas a partir de prototipos en Figma,
-            integrando mapas interactivos y geolocalización (Google Maps API), maquetación avanzada
-            (Sass, Bootstrap) y visualización de datos en tiempo real (Chart.js, D3.js).
+            Implementar interfaces web complejas a partir de prototipos en Figma, con mapas
+            interactivos y geolocalización (Google Maps API), maquetación avanzada (Sass, Bootstrap)
+            y visualización de datos en tiempo real (Chart.js, D3.js).
           </li>
           <li>
-            Modelar y gestionar bases de datos relacionales (PostgreSQL, MySQL) mediante TypeORM y
-            TypeORM migrations, implementando comunicación bidireccional en tiempo real vía
-            WebSockets / Socket.IO.
+            Modelar y gestionar bases de datos relacionales (PostgreSQL, MySQL) con TypeORM y
+            migraciones, e implementar comunicación bidireccional en tiempo real con WebSockets y
+            Socket.IO.
           </li>
           <li>
-            Automatizar flujos de DevOps y CI/CD en GitLab, orquestando despliegues de contenedores
-            con Docker, Docker Swarm y Kubernetes en infraestructura Google Cloud Platform (GCP).
+            Automatizar CI/CD en GitLab y orquestar despliegues con Docker, Docker Swarm y
+            Kubernetes en Google Cloud Platform (GCP).
           </li>
           <li>
-            Garantizar la calidad y mantenibilidad del software mediante el diseño e implementación
-            de pruebas unitarias y de integración en todo el stack.
+            Garantizar la calidad y mantenibilidad del software con pruebas unitarias y de
+            integración en todo el stack.
           </li>
         </ul>
       </div>
 
-      <!-- Innofis -->
+      <!-- Innofis (CREALOGIX) -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Full-Stack Developer</strong> -
-          <span class="cv-job-company">Innofis | CREALOGIX</span> |
-          <span class="cv-job-period">Febrero 2015 - Mayo 2018</span>
+          <strong>Full Stack Developer</strong> |
+          <span class="cv-job-company">Innofis (CREALOGIX)</span> |
+          <span class="cv-job-period">02/2015 - 05/2018</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            Desarrollar y mantener plataformas web corporativas, aplicaciones móviles web y campañas
-            interactivas de alto impacto para Danone y sus marcas, empleando arquitecturas híbridas
-            (Laravel / CodeIgniter en backend con Angular / jQuery en frontend).
+            Desarrollar y mantener plataformas web corporativas, aplicaciones web móviles y campañas
+            interactivas para Danone y sus marcas, con arquitecturas híbridas (Laravel y CodeIgniter
+            en backend; Angular y jQuery en frontend).
           </li>
           <li>
-            Implementar e integrar servicios web (APIs RESTful y SOAP), realizando pruebas de
-            integración con SoapUI y optimizando el rendimiento mediante sistemas de caché
-            (Memcached).
+            Implementar e integrar servicios web REST y SOAP, con pruebas de integración en SoapUI y
+            optimización del rendimiento mediante caché (Memcached).
           </li>
           <li>
-            Diseñar y ejecutar maquetación responsive compleja (Sass, Less, Bootstrap, Foundation)
-            para garantizar la compatibilidad multidispositivo en entornos de alto tráfico.
+            Diseñar maquetación responsive compleja (Sass, Less, Bootstrap, Foundation) para
+            garantizar compatibilidad multidispositivo en entornos de alto tráfico.
           </li>
           <li>
-            Procesar y extraer recursos gráficos a partir de mockups en Photoshop, traduciendo
-            especificaciones de diseño en código limpio y adaptado a los estándares de marca.
+            Traducir mockups de Photoshop en código limpio, adaptado a los estándares de marca.
           </li>
         </ul>
       </div>
@@ -317,13 +290,13 @@
       <!-- Alfa 9 -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Full-Stack Developer</strong> - <span class="cv-job-company">Alfa 9</span> |
-          <span class="cv-job-period">Octubre 2013 - Febrero 2015</span>
+          <strong>Full Stack Developer</strong> | <span class="cv-job-company">Alfa 9</span> |
+          <span class="cv-job-period">10/2013 - 02/2015</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            Desarrollo y mantenimiento de webs y e-commerces con Zend 1 y 2 (PHP), jQuery,
-            Bootstrap, Magento, Wordpress, para varios clientes (Audi, Generalitat de Cataluña, …)
+            Desarrollar y mantener webs y e-commerce con Zend 1 y 2 (PHP), jQuery, Bootstrap,
+            Magento y WordPress para clientes como Audi y la Generalitat de Cataluña.
           </li>
         </ul>
       </div>
@@ -331,13 +304,50 @@
       <!-- Futbollab -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Full-Stack Developer</strong> - <span class="cv-job-company">Futbollab</span> |
-          <span class="cv-job-period">Octubre 2012 - Julio 2013</span>
+          <strong>Full Stack Developer</strong> | <span class="cv-job-company">Futbollab</span> |
+          <span class="cv-job-period">10/2012 - 07/2013</span>
         </h3>
         <ul class="cv-bullet-list">
-          <li>Desarrollo y mantenimiento de webs y e-commerce con PrestaShop, Elgg, Wordpress.</li>
+          <li>Desarrollar y mantener webs y e-commerce con PrestaShop, Elgg y WordPress.</li>
         </ul>
       </div>
+    </section>
+
+    <!-- Formación Académica -->
+    <section class="cv-section">
+      <h2>Formación Académica</h2>
+      <ul class="cv-bullet-list">
+        <li>
+          <strong>Grado en Ingeniería Informática</strong> | Universidad Oberta de Catalunya (UOC) |
+          Barcelona | 2025-actualidad
+        </li>
+        <li>
+          <strong>Técnico Superior en Desarrollo de Aplicaciones Web (DAW)</strong> | IES Provençana
+          | 2013-2014
+        </li>
+        <li>
+          <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> |
+          IES Provençana | 2011-2012
+        </li>
+      </ul>
+    </section>
+
+    <!-- Idiomas -->
+    <section class="cv-section">
+      <h2>Idiomas</h2>
+      <ul class="cv-bullet-list">
+        <li><strong>Español:</strong> nativo</li>
+        <li><strong>Catalán:</strong> B2</li>
+        <li><strong>Inglés:</strong> B1</li>
+      </ul>
+    </section>
+
+    <!-- Otros datos -->
+    <section class="cv-section">
+      <h2>Otros datos</h2>
+      <ul class="cv-bullet-list">
+        <li>Carnet de conducir: A, B, BTP</li>
+      </ul>
     </section>
   </article>
 </ng-template>
