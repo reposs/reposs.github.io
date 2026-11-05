@@ -115,6 +115,26 @@
   margin: 0;
 }
 
+.timeline-bullets {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-muted);
+
+  li {
+    margin: 0;
+
+    strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+  }
+}
+
 .timeline-tech-bar {
   display: flex;
   align-items: baseline;

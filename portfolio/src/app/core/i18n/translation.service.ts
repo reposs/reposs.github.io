@@ -13,11 +13,12 @@ export class TranslationService {
   private readonly storageKey = 'portfolio-language';
   private readonly refreshVersion = signal(0);
 
-  readonly language = signal<AppLanguage>(this.getSavedLanguage());
+  readonly language = signal<AppLanguage>('es');
 
   constructor() {
-    this.translate.setFallbackLang('en');
-    this.translate.use(this.language());
+    this.translate.setFallbackLang('es');
+    this.translate.use('es');
+    this.document.documentElement.lang = 'es';
     this.translate.onLangChange.subscribe(({ lang }) => {
       this.document.documentElement.lang = lang;
       this.refreshVersion.update((version) => version + 1);
@@ -33,10 +34,5 @@ export class TranslationService {
   translateKey(key: string): string {
     this.refreshVersion();
     return this.translate.instant(key) as string;
-  }
-
-  private getSavedLanguage(): AppLanguage {
-    const savedLanguage = localStorage.getItem(this.storageKey);
-    return savedLanguage === 'es' ? 'es' : 'en';
   }
 }
