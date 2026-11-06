@@ -85,7 +85,7 @@
   "skillDevopsDesc": "CI/CD, Jenkins, GitHub Actions, GitLab CI/CD, Docker, Docker Swarm, Kubernetes, Google Cloud Platform (GCP), Git, GitHub, GitLab, Webpack.",
   "irisPeriod": "05/2018 — 10/2023 · 5 years and 5 months",
   "irisLocation": "Barcelona · European Union R&D Projects",
-  "irisCompany": "IRIS Technology Group",
+  "irisCompany": "IRIS Technology Solutions",
   "irisDescription": "Full-Stack architecture for European Union R&D projects: Angular (RxJS, Material, DevExtreme, i18n) on frontend and microservices with Node.js (NestJS, Express) and Python (Django, Falcon) on backend. Implemented interactive maps and geolocation (Google Maps API), Sass, Bootstrap, and real-time data visualisations (Chart.js, D3.js). Relational databases (PostgreSQL, MySQL) with TypeORM and migrations, plus WebSockets/Socket.IO. GitLab CI/CD automation with Docker, Swarm, and Kubernetes on GCP.",
   "irisBullet1": "Designed and developed Full-Stack architecture for European Union R&D projects: Angular (RxJS, Angular Material, DevExtreme, i18n) on frontend and microservices with Node.js (NestJS, Express) and Python (Django, Falcon) on backend.",
   "irisBullet2": "Implemented complex web interfaces from Figma prototypes, featuring interactive maps and real-time geolocation (Google Maps API), advanced styling (Sass, Bootstrap), and real-time data visualization (Chart.js, D3.js).",

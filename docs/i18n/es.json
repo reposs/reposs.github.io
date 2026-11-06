@@ -85,7 +85,7 @@
   "skillDevopsDesc": "CI/CD, Jenkins, GitHub Actions, GitLab CI/CD, Docker, Docker Swarm, Kubernetes, Google Cloud Platform (GCP), AWS, Red Hat, Linux, Ubuntu-server, Nginx, Apache, Git, GitHub, GitLab, Bitbucket, Webpack.",
   "irisPeriod": "05/2018 — 10/2023 · 5 años y 5 meses",
   "irisLocation": "Barcelona · Proyectos europeos de I+D (UE)",
-  "irisCompany": "IRIS Technology Group",
+  "irisCompany": "IRIS Technology Solutions",
   "irisDescription": "Diseñar y desarrollar arquitecturas full-stack para consorcios internacionales con alta concurrencia de datos en tiempo real. Implementar interfaces web complejas a partir de prototipos en Figma, con mapas interactivos y geolocalización (Google Maps API), maquetación avanzada (Sass, Bootstrap) y visualización de datos en tiempo real (Chart.js, D3.js). Modelar y gestionar bases de datos relacionales (PostgreSQL, MySQL) con TypeORM y migraciones, e implementar comunicación bidireccional en tiempo real con WebSockets y Socket.IO. Automatizar CI/CD en GitLab y orquestar despliegues con Docker, Docker Swarm y Kubernetes en Google Cloud Platform (GCP). Garantizar la calidad y mantenibilidad del software con pruebas unitarias y de integración en todo el stack.",
   "irisBullet1": "Diseñar y desarrollar arquitecturas full-stack para consorcios internacionales con alta concurrencia de datos en tiempo real.",
   "irisBullet2": "Implementar interfaces web complejas a partir de prototipos en Figma, con mapas interactivos y geolocalización (Google Maps API), maquetación avanzada (Sass, Bootstrap) y visualización de datos en tiempo real (Chart.js, D3.js).",
