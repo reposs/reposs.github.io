@@ -95,7 +95,7 @@
   "irisTech": "Angular · Node.js (NestJS, Express) · Python (Django, Falcon) · PostgreSQL · MySQL · TypeORM · WebSockets · Socket.IO · Google Maps API · Chart.js · D3.js · Docker · Kubernetes · GCP · GitLab CI/CD",
   "innofisPeriod": "02/2015 — 05/2018 · 3 years and 4 months",
   "innofisLocation": "Barcelona · Client: Danone",
-  "innofisCompany": "Innofis (CREALOGIX)",
+  "innofisCompany": "CREALOGIX",
   "innofisDescription": "Developed and maintained corporate platforms, mobile web apps, and digital campaigns for Danone and its brands, using hybrid architectures (Laravel and CodeIgniter in backend; Angular and jQuery in frontend). REST and SOAP web services, integration testing with SoapUI, and cache optimization with Memcached. Responsive design (Sass, Less, Bootstrap, Foundation) and Photoshop mockup translation into clean code.",
   "innofisTech": "PHP (Laravel, CodeIgniter) · Angular · jQuery · REST API · SOAP · SoapUI · Memcached · Sass · Less · Bootstrap · Foundation · Photoshop",
   "alfaPeriod": "10/2013 — 02/2015 · 1 year and 4 months",
