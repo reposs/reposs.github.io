@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { PortfolioPageComponent } from './features/portfolio/portfolio-page.component';
 import { CvModalComponent } from './features/cv/components/cv-modal/cv-modal.component';
+import { VisitTrackerService } from './core/analytics/visit-tracker.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,10 @@ import { CvModalComponent } from './features/cv/components/cv-modal/cv-modal.com
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {}
+export class App {
+  private readonly visitTracker = inject(VisitTrackerService);
+
+  constructor() {
+    this.visitTracker.trackVisit();
+  }
+}
