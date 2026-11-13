@@ -7,81 +7,79 @@
 }
 
 :root {
-  /* --- Modelo 5: Titanium Pearl 3D (Default Light Theme) --- */
-  --bg-body: #f4f4f7;
+  /* --- Cleanroom Ceramic Lab (Light Mode) --- */
+  --bg-body: #f3f6fb;
   --bg-surface: #ffffff;
-  --bg-surface-elevated: #ebebf0;
-  --bg-card: #ffffff;
-  --bg-card-hover: #ffffff;
-  --border-color: #d8d8e2;
-  --border-subtle: #b4b4c4;
+  --bg-surface-elevated: #e8eef7;
+  --bg-card: rgba(255, 255, 255, 0.88);
+  --bg-card-hover: rgba(255, 255, 255, 0.96);
+  --border-color: rgba(30, 64, 175, 0.16);
+  --border-subtle: rgba(29, 78, 216, 0.34);
 
-  --text-main: #09090b;
-  --text-muted: #52525b;
-  --text-dim: #71717a;
+  --text-main: #090d16;
+  --text-muted: #475569;
+  --text-dim: #64748b;
 
-  --primary: #4f46e5;
-  --primary-hover: #4338ca;
-  --primary-glow: rgba(79, 70, 229, 0.22);
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --primary-glow: rgba(29, 78, 216, 0.22);
 
-  --accent: #6366f1;
+  --accent: #2563eb;
   --accent-emerald: #059669;
-  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-bg: rgba(16, 185, 129, 0.12);
 
-  --pill-bg: #f1f1f5;
-  --pill-text: #18181b;
-  --pill-border: #d4d4dc;
+  --pill-bg: rgba(37, 99, 235, 0.06);
+  --pill-text: #0f172a;
+  --pill-border: rgba(30, 64, 175, 0.18);
 
-  --shadow-sm: 0 2px 6px rgba(9, 9, 11, 0.04);
-  --shadow-md: 0 10px 24px -4px rgba(9, 9, 11, 0.07), 0 4px 10px -2px rgba(9, 9, 11, 0.04);
-  --shadow-lg: 0 20px 40px -8px rgba(9, 9, 11, 0.1), 0 8px 16px -4px rgba(79, 70, 229, 0.06);
-  --shadow-xl: 0 28px 56px -10px rgba(9, 9, 11, 0.14), 0 10px 24px -6px rgba(79, 70, 229, 0.12);
+  --shadow-sm: 0 2px 8px rgba(9, 13, 22, 0.05);
+  --shadow-md: 0 10px 26px -4px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 42px -8px rgba(15, 23, 42, 0.12);
+  --shadow-xl: 0 28px 56px -10px rgba(29, 78, 216, 0.16);
 
-  --header-bg: rgba(244, 244, 247, 0.86);
-  --modal-backdrop: rgba(9, 9, 11, 0.65);
+  --header-bg: rgba(243, 246, 251, 0.84);
+  --modal-backdrop: rgba(9, 13, 22, 0.7);
 
-  --laser-border: rgba(79, 70, 229, 0.9);
-  --laser-surface: rgba(99, 102, 241, 0.09);
-  --dot-grid-color: rgba(9, 9, 11, 0.055);
+  --laser-border: rgba(29, 78, 216, 0.92);
+  --laser-surface: rgba(37, 99, 235, 0.08);
 }
 
 html.dark-mode {
-  /* --- Obsidian Titanium 3D (Dark Theme Alternative) --- */
-  --bg-body: #07070b;
-  --bg-surface: #0f0f15;
-  --bg-surface-elevated: #181822;
-  --bg-card: #0e0e14;
-  --bg-card-hover: #13131c;
-  --border-color: rgba(255, 255, 255, 0.09);
-  --border-subtle: rgba(255, 255, 255, 0.18);
+  /* --- Obsidian Cyber-Core (Default Dark Mode — AERO-CAD Quantum Blueprint) --- */
+  --bg-body: #060911;
+  --bg-surface: #0b111e;
+  --bg-surface-elevated: #111a2e;
+  --bg-card: rgba(11, 17, 30, 0.82);
+  --bg-card-hover: rgba(15, 23, 42, 0.9);
+  --border-color: rgba(56, 189, 248, 0.18);
+  --border-subtle: rgba(0, 242, 254, 0.38);
 
-  --text-main: #f4f4f6;
-  --text-muted: #a1a1aa;
-  --text-dim: #71717a;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
 
-  --primary: #818cf8;
-  --primary-hover: #a5b4fc;
-  --primary-glow: rgba(129, 140, 248, 0.25);
+  --primary: #00f2fe;
+  --primary-hover: #38bdf8;
+  --primary-glow: rgba(0, 242, 254, 0.25);
 
-  --accent: #6366f1;
+  --accent: #3b82f6;
   --accent-emerald: #10b981;
-  --accent-emerald-bg: rgba(16, 185, 129, 0.12);
+  --accent-emerald-bg: rgba(16, 185, 129, 0.14);
 
-  --pill-bg: #161620;
-  --pill-text: #e4e4e7;
-  --pill-border: rgba(255, 255, 255, 0.1);
+  --pill-bg: rgba(14, 165, 233, 0.08);
+  --pill-text: #e2e8f0;
+  --pill-border: rgba(56, 189, 248, 0.2);
 
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 10px 24px -4px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 20px 40px -8px rgba(0, 0, 0, 0.65);
-  --shadow-xl: 0 28px 56px -10px rgba(0, 0, 0, 0.75);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 12px 28px -4px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 22px 44px -8px rgba(0, 0, 0, 0.72);
+  --shadow-xl: 0 28px 60px -10px rgba(0, 242, 254, 0.14), 0 16px 36px -8px rgba(0, 0, 0, 0.8);
 
-  --header-bg: rgba(7, 7, 11, 0.86);
-  --modal-backdrop: rgba(0, 0, 0, 0.82);
+  --header-bg: rgba(6, 9, 17, 0.82);
+  --modal-backdrop: rgba(2, 4, 10, 0.85);
 
-  --laser-border: rgba(129, 140, 248, 0.95);
-  --laser-surface: rgba(99, 102, 241, 0.15);
-  --dot-grid-color: rgba(255, 255, 255, 0.05);
+  --laser-border: rgba(0, 242, 254, 0.95);
+  --laser-surface: rgba(0, 242, 254, 0.1);
 }
 
 html {
@@ -93,8 +91,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-body);
-  background-image: radial-gradient(var(--dot-grid-color) 1px, transparent 1px);
-  background-size: 24px 24px;
   color: var(--text-main);
   font-family:
     'Plus Jakarta Sans',
@@ -112,9 +108,16 @@ body {
     color 0.3s ease;
 }
 
+app-header,
+main.portfolio-main,
+app-footer {
+  position: relative;
+  z-index: 1;
+}
+
 ::selection {
   background: var(--primary);
-  color: #ffffff;
+  color: #060911;
 }
 
 /* --- Global Utilities --- */
@@ -130,19 +133,19 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 55%, #09090b 100%);
+  background: linear-gradient(135deg, #1d4ed8 0%, #0284c7 60%, #090d16 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
 html.dark-mode .text-gradient {
-  background: linear-gradient(135deg, #818cf8 0%, #c084fc 60%, #ffffff 100%);
+  background: linear-gradient(135deg, #00f2fe 0%, #38bdf8 55%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* --- Modelo 5: 3D Levitation + Chrome/Indigo Proximity Laser Cards --- */
+/* --- AERO-CAD // Quantum Blueprint Modules (3D Levitation + Laser Perimeter + Corner Crosshairs) --- */
 .hero-profile-card,
 .proof-card,
 .pillar-card,
@@ -160,6 +163,8 @@ html.dark-mode .text-gradient {
       transparent 55%
     ),
     var(--bg-card) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   transform-style: preserve-3d;
   will-change: transform;
   transition:
@@ -170,11 +175,11 @@ html.dark-mode .text-gradient {
   &::after {
     content: '';
     position: absolute;
-    inset: 0;
+    inset: -1px;
     border-radius: inherit;
     padding: 1.5px;
     background: radial-gradient(
-      360px circle at var(--mx, -600px) var(--my, -600px),
+      340px circle at var(--mx, -600px) var(--my, -600px),
       var(--laser-border),
       transparent 45%
     );
@@ -189,6 +194,35 @@ html.dark-mode .text-gradient {
 
   &:hover {
     box-shadow: var(--shadow-xl) !important;
+  }
+}
+
+.cad-corner-mark {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 1;
+  color: var(--primary);
+  opacity: 0.55;
+  pointer-events: none;
+  user-select: none;
+  z-index: 3;
+
+  &.cad-tl {
+    top: 7px;
+    left: 9px;
+  }
+  &.cad-tr {
+    top: 7px;
+    right: 9px;
+  }
+  &.cad-bl {
+    bottom: 7px;
+    left: 9px;
+  }
+  &.cad-br {
+    bottom: 7px;
+    right: 9px;
   }
 }
 
