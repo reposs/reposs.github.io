@@ -4,6 +4,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { PortfolioPageComponent } from './features/portfolio/portfolio-page.component';
 import { CvModalComponent } from './features/cv/components/cv-modal/cv-modal.component';
 import { VisitTrackerService } from './core/analytics/visit-tracker.service';
+import { InteractiveTiltService } from './core/ui/interactive-tilt.service';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +14,10 @@ import { VisitTrackerService } from './core/analytics/visit-tracker.service';
 })
 export class App {
   private readonly visitTracker = inject(VisitTrackerService);
+  private readonly tiltService = inject(InteractiveTiltService);
 
   constructor() {
     this.visitTracker.trackVisit();
+    this.tiltService.init();
   }
 }

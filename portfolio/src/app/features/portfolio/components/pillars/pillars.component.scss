@@ -47,15 +47,21 @@
 }
 
 .pillar-icon {
-  font-size: 32px;
-  line-height: 1;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: var(--text-main);
+  color: var(--bg-body);
 }
 
 .pillar-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   margin: 0 0 12px;
   color: var(--text-main);
 }

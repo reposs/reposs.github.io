@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" class="dark-mode">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <title>R.David Márquez Prieto | Senior Software Engineer</title>
@@ -8,11 +8,11 @@
     <script>
       (function () {
         try {
-          var theme = localStorage.getItem('portfolio-theme');
-          if (theme === 'light') {
-            document.documentElement.classList.remove('dark-mode');
-          } else {
+          var theme = localStorage.getItem('portfolio-theme-v2');
+          if (theme === 'dark') {
             document.documentElement.classList.add('dark-mode');
+          } else {
+            document.documentElement.classList.remove('dark-mode');
           }
         } catch (e) {}
       })();
@@ -23,7 +23,7 @@
     />
     <meta name="author" content="R.David Márquez Prieto" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#080c14" />
+    <meta name="theme-color" content="#f4f4f7" />
     <link rel="canonical" href="/" />
     <link rel="alternate" hreflang="en" href="/" />
     <link rel="alternate" hreflang="es" href="/" />
@@ -58,7 +58,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 

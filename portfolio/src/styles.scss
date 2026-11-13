@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Syne:wght@600;700;800&display=swap');
 
 *,
 *::before,
@@ -7,73 +7,81 @@
 }
 
 :root {
-  /* --- Light Theme Variables --- */
-  --bg-body: #f8fafc;
+  /* --- Modelo 5: Titanium Pearl 3D (Default Light Theme) --- */
+  --bg-body: #f4f4f7;
   --bg-surface: #ffffff;
-  --bg-surface-elevated: #f1f5f9;
+  --bg-surface-elevated: #ebebf0;
   --bg-card: #ffffff;
-  --bg-card-hover: #f8fafc;
-  --border-color: #e2e8f0;
-  --border-subtle: #cbd5e1;
+  --bg-card-hover: #ffffff;
+  --border-color: #d8d8e2;
+  --border-subtle: #b4b4c4;
 
-  --text-main: #0f172a;
-  --text-muted: #64748b;
-  --text-dim: #94a3b8;
+  --text-main: #09090b;
+  --text-muted: #52525b;
+  --text-dim: #71717a;
 
-  --primary: #0284c7;
-  --primary-hover: #0369a1;
-  --primary-glow: rgba(2, 132, 199, 0.15);
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-glow: rgba(79, 70, 229, 0.22);
 
   --accent: #6366f1;
   --accent-emerald: #059669;
   --accent-emerald-bg: #ecfdf5;
 
-  --pill-bg: #f1f5f9;
-  --pill-text: #334155;
-  --pill-border: #e2e8f0;
+  --pill-bg: #f1f1f5;
+  --pill-text: #18181b;
+  --pill-border: #d4d4dc;
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
-  --shadow-xl: 0 20px 35px -5px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 2px 6px rgba(9, 9, 11, 0.04);
+  --shadow-md: 0 10px 24px -4px rgba(9, 9, 11, 0.07), 0 4px 10px -2px rgba(9, 9, 11, 0.04);
+  --shadow-lg: 0 20px 40px -8px rgba(9, 9, 11, 0.1), 0 8px 16px -4px rgba(79, 70, 229, 0.06);
+  --shadow-xl: 0 28px 56px -10px rgba(9, 9, 11, 0.14), 0 10px 24px -6px rgba(79, 70, 229, 0.12);
 
-  --header-bg: rgba(248, 250, 252, 0.85);
-  --modal-backdrop: rgba(15, 23, 42, 0.65);
+  --header-bg: rgba(244, 244, 247, 0.86);
+  --modal-backdrop: rgba(9, 9, 11, 0.65);
+
+  --laser-border: rgba(79, 70, 229, 0.9);
+  --laser-surface: rgba(99, 102, 241, 0.09);
+  --dot-grid-color: rgba(9, 9, 11, 0.055);
 }
 
 html.dark-mode {
-  /* --- Dark Theme Variables --- */
-  --bg-body: #080c14;
-  --bg-surface: #0f172a;
-  --bg-surface-elevated: #1e293b;
-  --bg-card: rgba(15, 23, 42, 0.7);
-  --bg-card-hover: rgba(30, 41, 59, 0.75);
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-subtle: rgba(255, 255, 255, 0.14);
+  /* --- Obsidian Titanium 3D (Dark Theme Alternative) --- */
+  --bg-body: #07070b;
+  --bg-surface: #0f0f15;
+  --bg-surface-elevated: #181822;
+  --bg-card: #0e0e14;
+  --bg-card-hover: #13131c;
+  --border-color: rgba(255, 255, 255, 0.09);
+  --border-subtle: rgba(255, 255, 255, 0.18);
 
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  --text-main: #f4f4f6;
+  --text-muted: #a1a1aa;
+  --text-dim: #71717a;
 
-  --primary: #38bdf8;
-  --primary-hover: #7dd3fc;
-  --primary-glow: rgba(56, 189, 248, 0.2);
+  --primary: #818cf8;
+  --primary-hover: #a5b4fc;
+  --primary-glow: rgba(129, 140, 248, 0.25);
 
-  --accent: #818cf8;
+  --accent: #6366f1;
   --accent-emerald: #10b981;
   --accent-emerald-bg: rgba(16, 185, 129, 0.12);
 
-  --pill-bg: rgba(30, 41, 59, 0.8);
-  --pill-text: #cbd5e1;
-  --pill-border: rgba(255, 255, 255, 0.08);
+  --pill-bg: #161620;
+  --pill-text: #e4e4e7;
+  --pill-border: rgba(255, 255, 255, 0.1);
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
-  --shadow-xl: 0 20px 35px -5px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 24px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 40px -8px rgba(0, 0, 0, 0.65);
+  --shadow-xl: 0 28px 56px -10px rgba(0, 0, 0, 0.75);
 
-  --header-bg: rgba(8, 12, 20, 0.85);
-  --modal-backdrop: rgba(0, 0, 0, 0.8);
+  --header-bg: rgba(7, 7, 11, 0.86);
+  --modal-backdrop: rgba(0, 0, 0, 0.82);
+
+  --laser-border: rgba(129, 140, 248, 0.95);
+  --laser-surface: rgba(99, 102, 241, 0.15);
+  --dot-grid-color: rgba(255, 255, 255, 0.05);
 }
 
 html {
@@ -85,8 +93,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-body);
+  background-image: radial-gradient(var(--dot-grid-color) 1px, transparent 1px);
+  background-size: 24px 24px;
   color: var(--text-main);
   font-family:
+    'Plus Jakarta Sans',
     'Inter',
     -apple-system,
     BlinkMacSystemFont,
@@ -119,10 +130,66 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 50%, #c084fc 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 55%, #09090b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+
+html.dark-mode .text-gradient {
+  background: linear-gradient(135deg, #818cf8 0%, #c084fc 60%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Modelo 5: 3D Levitation + Chrome/Indigo Proximity Laser Cards --- */
+.hero-profile-card,
+.proof-card,
+.pillar-card,
+.skill-card,
+.timeline-card,
+.project-card,
+.edu-card,
+.side-card,
+.cta-inner {
+  position: relative;
+  background:
+    radial-gradient(
+      480px circle at var(--mx, -600px) var(--my, -600px),
+      var(--laser-surface),
+      transparent 55%
+    ),
+    var(--bg-card) !important;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition:
+    transform 0.16s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease !important;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: radial-gradient(
+      360px circle at var(--mx, -600px) var(--my, -600px),
+      var(--laser-border),
+      transparent 45%
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-xl) !important;
+  }
 }
 
 /* --- CV Modal Overlay --- */

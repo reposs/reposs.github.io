@@ -4,11 +4,11 @@ import { AppTheme } from './theme.model';
 
 export type { AppTheme };
 
-/** Manages dark/light theme state and syncs with localStorage and document element. Defaults to dark mode. */
+/** Manages dark/light theme state and syncs with localStorage and document element. Defaults to Titanium Pearl light mode. */
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
   private readonly document = inject(DOCUMENT);
-  private readonly storageKey = 'portfolio-theme';
+  private readonly storageKey = 'portfolio-theme-v2';
 
   readonly theme = signal<AppTheme>(this.getInitialTheme());
 
@@ -39,6 +39,6 @@ export class ThemeService {
     if (savedTheme === 'light' || savedTheme === 'dark') {
       return savedTheme;
     }
-    return 'dark';
+    return 'light';
   }
 }
