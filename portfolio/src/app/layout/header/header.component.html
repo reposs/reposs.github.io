@@ -34,6 +34,29 @@
         <span>{{ i18n.translateKey('navCv') }}</span>
       </button>
 
+      <div class="segmented-lang" role="group" aria-label="Language selector">
+        <button
+          type="button"
+          class="lang-btn"
+          [class.active]="i18n.language() === 'en'"
+          [attr.aria-pressed]="i18n.language() === 'en'"
+          (click)="i18n.setLanguage('en')"
+          aria-label="English"
+        >
+          EN
+        </button>
+        <button
+          type="button"
+          class="lang-btn"
+          [class.active]="i18n.language() === 'es'"
+          [attr.aria-pressed]="i18n.language() === 'es'"
+          (click)="i18n.setLanguage('es')"
+          aria-label="Español"
+        >
+          ES
+        </button>
+      </div>
+
       <button
         type="button"
         class="btn-theme-toggle"
@@ -136,6 +159,28 @@
             📄 {{ i18n.translateKey('viewCv') }}
           </button>
           <div class="mobile-drawer-toolbar">
+            <div class="segmented-lang" role="group" aria-label="Language selector">
+              <button
+                type="button"
+                class="lang-btn"
+                [class.active]="i18n.language() === 'en'"
+                [attr.aria-pressed]="i18n.language() === 'en'"
+                (click)="i18n.setLanguage('en')"
+                aria-label="English"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                class="lang-btn"
+                [class.active]="i18n.language() === 'es'"
+                [attr.aria-pressed]="i18n.language() === 'es'"
+                (click)="i18n.setLanguage('es')"
+                aria-label="Español"
+              >
+                ES
+              </button>
+            </div>
             <button type="button" class="btn-theme-toggle" (click)="themeService.toggleTheme()">
               @if (themeService.theme() === 'dark') {
                 <span>☀️</span>

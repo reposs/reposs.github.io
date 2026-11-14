@@ -46,15 +46,15 @@
         type="button"
         class="chip-copy-email"
         (click)="copyEmail()"
-        title="Copiar email al portapapeles"
+        [title]="i18n.translateKey('copyEmail')"
       >
         <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
           <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
         </svg>
-        <span>Copiar email</span>
+        <span>{{ i18n.translateKey('copyEmail') }}</span>
         @if (emailCopied()) {
-          <span class="copy-badge">✓ ¡Copiado!</span>
+          <span class="copy-badge">{{ i18n.translateKey('emailCopied') }}</span>
         }
       </button>
 
@@ -120,12 +120,12 @@
       <p class="card-role">{{ i18n.translateKey('role') }}</p>
 
       <div class="card-chips">
-        <span class="chip-tech highlight">Angular v2 a 21</span>
+        <span class="chip-tech highlight">Angular v2–21</span>
         <span class="chip-tech">Microfrontends</span>
         <span class="chip-tech">Signals & NgRx</span>
         <span class="chip-tech">Hexagonal</span>
         <span class="chip-tech">TDD (>95%)</span>
-        <span class="chip-tech highlight-ai">IA Agentica</span>
+        <span class="chip-tech highlight-ai">Agentic AI</span>
       </div>
     </div>
   </aside>

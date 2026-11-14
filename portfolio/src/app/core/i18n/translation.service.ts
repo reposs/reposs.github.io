@@ -10,15 +10,16 @@ export type { AppLanguage };
 export class TranslationService {
   private readonly translate = inject(TranslateService);
   private readonly document = inject(DOCUMENT);
-  private readonly storageKey = 'portfolio-language';
+  private readonly storageKey = 'portfolio-language-v2';
   private readonly refreshVersion = signal(0);
 
-  readonly language = signal<AppLanguage>('es');
+  readonly language = signal<AppLanguage>(this.getInitialLanguage());
 
   constructor() {
-    this.translate.setFallbackLang('es');
-    this.translate.use('es');
-    this.document.documentElement.lang = 'es';
+    const initialLang = this.language();
+    this.translate.setFallbackLang('en');
+    this.translate.use(initialLang);
+    this.document.documentElement.lang = initialLang;
     this.translate.onLangChange.subscribe(({ lang }) => {
       this.document.documentElement.lang = lang;
       this.refreshVersion.update((version) => version + 1);
@@ -34,5 +35,10 @@ export class TranslationService {
   translateKey(key: string): string {
     this.refreshVersion();
     return this.translate.instant(key) as string;
+  }
+
+  private getInitialLanguage(): AppLanguage {
+    const savedLanguage = localStorage.getItem(this.storageKey);
+    return savedLanguage === 'es' || savedLanguage === 'en' ? savedLanguage : 'en';
   }
 }

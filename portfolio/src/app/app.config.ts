@@ -10,9 +10,9 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
     provideTranslateService({
-      fallbackLang: 'es',
-      lang: 'es',
-      loader: provideTranslateHttpLoader({ prefix: './i18n/', suffix: '.json?v=20261113-1' }),
+      fallbackLang: 'en',
+      lang: 'en',
+      loader: provideTranslateHttpLoader({ prefix: './i18n/', suffix: '.json?v=20261114-1' }),
     }),
   ],
 };
