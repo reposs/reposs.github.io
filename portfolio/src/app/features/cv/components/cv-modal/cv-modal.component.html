@@ -67,12 +67,12 @@
     <div class="cv-header">
       <h1 class="cv-name">R.DAVID MÁRQUEZ PRIETO</h1>
       <div class="cv-contact-info">
-        <p class="cv-contact-line">Hospitalet de Llobregat (Barcelona), España</p>
+        <p class="cv-contact-line">{{ i18n.translateKey('location') }}</p>
         <p class="cv-contact-line">
-          Teléfono: +34 633 582 744 | Email:
+          {{ i18n.translateKey('cvPhoneEmail') }}
           <a href="mailto:rdavid.marquez.prieto@gmail.com">rdavid.marquez.prieto&#64;gmail.com</a>
         </p>
-        <p class="cv-contact-line">Carnet de conducir: A, B, BTP</p>
+        <p class="cv-contact-line">{{ i18n.translateKey('licensesTitle') }}: {{ i18n.translateKey('licensesDesc') }}</p>
         <p class="cv-contact-line">
           LinkedIn:
           <a
@@ -97,82 +97,65 @@
 
     <!-- Formación Académica -->
     <section class="cv-section">
-      <h2>Formación Académica</h2>
+      <h2>{{ i18n.translateKey('educationLabel') }}</h2>
       <ul class="cv-bullet-list">
         <li>
-          <strong>Grado en Ingeniería Informática (No finalizados)</strong> | Universidad Oberta de
-          Catalunya (UOC) | Barcelona | 2025 - 2026
+          <strong>{{ i18n.translateKey('computerEngineering') }}</strong> | {{ i18n.translateKey('uoc') }}
         </li>
         <li>
-          <strong>Técnico Superior en Desarrollo de Aplicaciones Web (DAW)</strong> | IES Provençana
-          | 2013 - 2014
+          <strong>{{ i18n.translateKey('webDevelopment') }}</strong> | {{ i18n.translateKey('provençanaDaw') }}
         </li>
         <li>
-          <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> |
-          IES Provençana | 2011 - 2012
+          <strong>{{ i18n.translateKey('multiplatformDevelopment') }}</strong> | {{ i18n.translateKey('provençanaDam') }}
         </li>
       </ul>
     </section>
 
     <!-- Competencias Técnicas -->
     <section class="cv-section">
-      <h2>Competencias Técnicas</h2>
+      <h2>{{ i18n.translateKey('skillsLabel') }}</h2>
       <ul class="cv-bullet-list">
         <li>
-          <strong>Arquitectura:</strong> MVC, SPA, Monorepo, Arquitectura Hexagonal, CORS,
-          Microservicios, REST API.
+          <strong>{{ i18n.translateKey('cvArchLabel') }}</strong> {{ i18n.translateKey('cvArchValue') }}
         </li>
         <li>
-          <strong>Metodologías:</strong> Agile, Scrum, Kanban, Jira, Confluence, Documentación
-          técnica (DT).
+          <strong>{{ i18n.translateKey('cvMethLabel') }}</strong> {{ i18n.translateKey('cvMethValue') }}
         </li>
         <li>
-          <strong>IA para desarrollo:</strong> GitHub Copilot (Agentes), Claude Code, Codex, Skills,
-          IA Agentica.
+          <strong>{{ i18n.translateKey('skillAiTitle') }}:</strong> {{ i18n.translateKey('skillAiDesc') }}
         </li>
       </ul>
     </section>
 
     <!-- Experiencia Profesional (Page 1) -->
     <section class="cv-section">
-      <h2>Experiencia Profesional</h2>
+      <h2>{{ i18n.translateKey('selectedExperience') }}</h2>
 
       <!-- GFT Technologies -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Senior Frontend Engineer & Technical Analyst (Angular)</strong> |
-          <span class="cv-job-company">GFT Technologies</span> |
-          <span class="cv-job-period">03/2026 - 07/2026</span>
+          <strong>{{ i18n.translateKey('gftRole') }}</strong> |
+          <span class="cv-job-company">{{ i18n.translateKey('gftCompany') }}</span> |
+          <span class="cv-job-period">{{ i18n.translateKey('gftPeriod') }}</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            <strong class="cv-underline">Tecnologías:</strong> Angular (v18 a 21: Standalone
-            Components, Signals, RxJS, NgRx, Signal Store), NodeJs, VS Code, IA Copilot, Claude
-            Code, Codex, Jira, Confluence, Figma, Galatea, Proteo 4, GIT, Bitbucket.
+            <strong class="cv-underline">{{ i18n.translateKey('cvTechLabel') }}</strong> {{ i18n.translateKey('gftTech') }}
           </li>
           <li>
-            <strong class="cv-underline">Tareas:</strong>
+            <strong class="cv-underline">{{ i18n.translateKey('cvTasksLabel') }}</strong>
             <ul class="cv-sub-bullet-list">
               <li>
-                Análisis técnico y definición de arquitectura: Responsable de traducir los
-                requisitos funcionales del negocio en soluciones técnicas estables bajo Arquitectura
-                Hexagonal sobre el aplicativo bancario principal (Galatea / Proteo 4) para Banco
-                Sabadell.
+                {{ i18n.translateKey('gftBullet1Title') }} {{ i18n.translateKey('gftBullet1Text') }}
               </li>
               <li>
-                Ingeniería inversa y Documentación Técnica (DT): Análisis en profundidad de código
-                legacy y diseño detallado de componentes, flujos e integraciones en Documentos
-                Técnicos arquitectónicos validados con éxito.
+                {{ i18n.translateKey('gftBullet2Title') }} {{ i18n.translateKey('gftBullet2Text') }}
               </li>
               <li>
-                Auditoría y Aseguramiento de la Calidad: Ejecución de revisiones de código (Code
-                Reviews) sistemáticas para garantizar las buenas prácticas de desarrollo y el
-                estricto cumplimiento de los estándares del banco antes del paso a producción.
+                {{ i18n.translateKey('gftBullet3Title') }} {{ i18n.translateKey('gftBullet3Text') }}
               </li>
               <li>
-                Eficiencia con IA Generativa: Integración avanzada de agentes y herramientas de IA
-                (GitHub Copilot, Claude Code) para acelerar el análisis de arquitecturas complejas y
-                la redacción documental.
+                {{ i18n.translateKey('gftBullet4Title') }} {{ i18n.translateKey('gftBullet4Text') }}
               </li>
             </ul>
           </li>
@@ -182,41 +165,21 @@
       <!-- Plexus Tech -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Senior Angular Engineer</strong> |
-          <span class="cv-job-company">Plexus Tech</span> |
-          <span class="cv-job-period">10/2023 - 03/2026</span>
+          <strong>{{ i18n.translateKey('plexusRole') }}</strong> |
+          <span class="cv-job-company">{{ i18n.translateKey('plexusCompany') }}</span> |
+          <span class="cv-job-period">{{ i18n.translateKey('plexusPeriod') }}</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            <strong class="cv-underline">Tecnologías:</strong> Angular (v8 a 21: Standalone
-            Components, Signals, RxJS, NgRx, Signal Store), NodeJs, Express, GIT, CI/CD, Jenkins, VS
-            Code, WebStorm, Nginx, CSS, SCSS, Typescript, Html, GitHub, Jira, Confluence, IA
-            Copilot, Flame, Figma, Java, Module Federation, Jest, Karma, Jasmine, SonarQube,
-            Fortify, Red Hat, Webpack, Docker, Responsive Design, i18n, TDD, BDD, Unit Testing,
-            Integration Testing.
+            <strong class="cv-underline">{{ i18n.translateKey('cvTechLabel') }}</strong> {{ i18n.translateKey('plexusTech') }}
           </li>
           <li>
-            <strong class="cv-underline">Tareas:</strong>
+            <strong class="cv-underline">{{ i18n.translateKey('cvTasksLabel') }}</strong>
             <ul class="cv-sub-bullet-list">
-              <li>
-                Desarrollar e integrar Microfrontends y Web Components sobre una arquitectura
-                distribuida para Banco Santander, conectando múltiples APIs RESTful con el sistema
-                de diseño corporativo Flame.
-              </li>
-              <li>
-                Implementar soluciones en Angular moderno (v2 a v21) con Standalone Components,
-                Signals y gestión de estado con NgRx (Store, Effects, Selectors, Signal Store).
-              </li>
-              <li>
-                Diseñar y ejecutar tests unitarios, de integración y de componentes (Jest, Karma,
-                Jasmine) con TDD/BDD, elevando la cobertura de 70% a 95% y cumpliendo los estándares
-                de calidad de SonarQube y Fortify.
-              </li>
-              <li>
-                Optimizar pipelines CI/CD (Jenkins, GitHub Actions), realizar code reviews y
-                promover el desarrollo asistido por IA (agentes de GitHub Copilot) dentro de un
-                equipo Agile/Scrum de 5 personas.
-              </li>
+              <li>{{ i18n.translateKey('plexusBullet1') }}</li>
+              <li>{{ i18n.translateKey('plexusBullet2') }}</li>
+              <li>{{ i18n.translateKey('plexusBullet3') }}</li>
+              <li>{{ i18n.translateKey('plexusBullet4') }}</li>
             </ul>
           </li>
         </ul>
@@ -231,44 +194,22 @@
       <!-- IRIS Technology Solutions -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Senior Software Engineer</strong> |
-          <span class="cv-job-company">IRIS Technology Solutions</span> |
-          <span class="cv-job-period">05/2018 - 10/2023</span>
+          <strong>{{ i18n.translateKey('irisRole') }}</strong> |
+          <span class="cv-job-company">{{ i18n.translateKey('irisCompany') }}</span> |
+          <span class="cv-job-period">{{ i18n.translateKey('irisPeriod') }}</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            <strong class="cv-underline">Tecnologías:</strong> Python, Falcon, Django, Angular
-            v2-14, NodeJs, Nestjs, Express, WordPress, JavaScript, typescript, css, html, sass,
-            scss, PyCharm, Angular Material, Rxjs, i18n, DevExtreme, Bash, GitHub Actions, CI/CD,
-            Docker, Docker Swarm, Kubernetes, Google Cloud Platform (GCP), Git, GitHub, GitLab, AWS,
-            Linux, Ubuntu-server, Figma, Nginx, Apache, Google Maps API, Chart.js, D3.js,
-            WebSockets, Socket.IO, TypeORM, DBeaver, PostgreSQL.
+            <strong class="cv-underline">{{ i18n.translateKey('cvTechLabel') }}</strong> {{ i18n.translateKey('irisTech') }}
           </li>
           <li>
-            <strong class="cv-underline">Tareas:</strong>
+            <strong class="cv-underline">{{ i18n.translateKey('cvTasksLabel') }}</strong>
             <ul class="cv-sub-bullet-list">
-              <li>
-                Diseñar y desarrollar arquitecturas full-stack para consorcios internacionales con
-                alta concurrencia de datos en tiempo real.
-              </li>
-              <li>
-                Implementar interfaces web complejas a partir de prototipos en Figma, con mapas
-                interactivos y geolocalización (Google Maps API), maquetación avanzada (Sass,
-                Bootstrap) y visualización de datos en tiempo real (Chart.js, D3.js).
-              </li>
-              <li>
-                Modelar y gestionar bases de datos relacionales (PostgreSQL, MySQL) con TypeORM y
-                migraciones, e implementar comunicación bidireccional en tiempo real con WebSockets
-                y Socket.IO.
-              </li>
-              <li>
-                Automatizar CI/CD en GitLab y orquestar despliegues con Docker, Docker Swarm y
-                Kubernetes en Google Cloud Platform (GCP).
-              </li>
-              <li>
-                Garantizar la calidad y mantenibilidad del software con pruebas unitarias y de
-                integración en todo el stack.
-              </li>
+              <li>{{ i18n.translateKey('irisBullet1') }}</li>
+              <li>{{ i18n.translateKey('irisBullet2') }}</li>
+              <li>{{ i18n.translateKey('irisBullet3') }}</li>
+              <li>{{ i18n.translateKey('irisBullet4') }}</li>
+              <li>{{ i18n.translateKey('irisBullet5') }}</li>
             </ul>
           </li>
         </ul>
@@ -277,35 +218,21 @@
       <!-- CREALOGIX -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Full Stack Web Developer</strong> |
-          <span class="cv-job-company">CREALOGIX</span> |
-          <span class="cv-job-period">02/2015 - 05/2018</span>
+          <strong>{{ i18n.translateKey('innofisRole') }}</strong> |
+          <span class="cv-job-company">{{ i18n.translateKey('innofisCompany') }}</span> |
+          <span class="cv-job-period">{{ i18n.translateKey('innofisPeriod') }}</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            <strong class="cv-underline">Tecnologías:</strong> PHP, Laravel, Codeigniter, Twig,
-            less, sass, css, AngularJS, Angular 2, html, JavaScript, JQuery, Java, Drupal,
-            WordPress, PHPStorm, MySQL, PostgreSQL, NodeJs, GIT, SoapUi, Memcached, Photoshop,
-            Apache.
+            <strong class="cv-underline">{{ i18n.translateKey('cvTechLabel') }}</strong> {{ i18n.translateKey('innofisTech') }}
           </li>
           <li>
-            <strong class="cv-underline">Tareas:</strong>
+            <strong class="cv-underline">{{ i18n.translateKey('cvTasksLabel') }}</strong>
             <ul class="cv-sub-bullet-list">
-              <li>
-                Desarrollar y mantener plataformas corporativas, aplicaciones web móviles y campañas
-                interactivas para Danone y sus marcas, con arquitecturas híbridas.
-              </li>
-              <li>
-                Implementar e integrar servicios web REST y SOAP, con pruebas de integración en
-                SoapUI y optimización del rendimiento mediante caché (Memcached).
-              </li>
-              <li>
-                Diseñar maquetación responsive compleja (Sass, Less, Bootstrap, Foundation) para
-                garantizar compatibilidad multidispositivo en entornos de alto tráfico.
-              </li>
-              <li>
-                Traducir mockups de Photoshop en código limpio, adaptado a los estándares de marca.
-              </li>
+              <li>{{ i18n.translateKey('innofisBullet1') }}</li>
+              <li>{{ i18n.translateKey('innofisBullet2') }}</li>
+              <li>{{ i18n.translateKey('innofisBullet3') }}</li>
+              <li>{{ i18n.translateKey('innofisBullet4') }}</li>
             </ul>
           </li>
         </ul>
@@ -314,23 +241,17 @@
       <!-- Alfa9 -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Full Stack Web Developer</strong> | <span class="cv-job-company">Alfa9</span> |
-          <span class="cv-job-period">10/2013 - 02/2015</span>
+          <strong>{{ i18n.translateKey('alfaRole') }}</strong> | <span class="cv-job-company">{{ i18n.translateKey('alfaCompany') }}</span> |
+          <span class="cv-job-period">{{ i18n.translateKey('alfaPeriod') }}</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            <strong class="cv-underline">Tecnologías:</strong> PHP, Zend framework 1 y 2, css, html,
-            JavaScript, JQuery, AngularJS, SVN, TortoiseSVN, Apache, Apache Tomcat, Bash, Magento,
-            WordPress, MySQL Workbench, Mysql, Eclipse, Intellij, NetBeans, Foundation, Bootstrap,
-            JSP.
+            <strong class="cv-underline">{{ i18n.translateKey('cvTechLabel') }}</strong> {{ i18n.translateKey('alfaTech') }}
           </li>
           <li>
-            <strong class="cv-underline">Tareas:</strong>
+            <strong class="cv-underline">{{ i18n.translateKey('cvTasksLabel') }}</strong>
             <ul class="cv-sub-bullet-list">
-              <li>
-                Desarrollar y mantener webs y e-commerce con Zend 1 y 2 (PHP), jQuery, Bootstrap,
-                Magento y WordPress para clientes como Audi y la Generalitat de Cataluña.
-              </li>
+              <li>{{ i18n.translateKey('alfaDescription') }}</li>
             </ul>
           </li>
         </ul>
@@ -339,22 +260,17 @@
       <!-- Futbollab -->
       <div class="cv-job">
         <h3 class="cv-job-title">
-          <strong>Full Stack Web Developer</strong> | <span class="cv-job-company">Futbollab</span> |
-          <span class="cv-job-period">10/2012 - 07/2013</span>
+          <strong>{{ i18n.translateKey('futbollabRole') }}</strong> | <span class="cv-job-company">{{ i18n.translateKey('futbollabCompany') }}</span> |
+          <span class="cv-job-period">{{ i18n.translateKey('futbollabPeriod') }}</span>
         </h3>
         <ul class="cv-bullet-list">
           <li>
-            <strong class="cv-underline">Tecnologías:</strong> PrestaShop, WordPress, PHP,
-            phpMyadmin, ogg, css, html, JavaScript, JQuery, MySQL, Aptana Studio, Geany, Notepad++.
+            <strong class="cv-underline">{{ i18n.translateKey('cvTechLabel') }}</strong> {{ i18n.translateKey('futbollabTech') }}
           </li>
           <li>
-            <strong class="cv-underline">Tareas:</strong>
+            <strong class="cv-underline">{{ i18n.translateKey('cvTasksLabel') }}</strong>
             <ul class="cv-sub-bullet-list">
-              <li>
-                Desarrollar y mantener webs, gestionar contenidos de los wordpress para captar
-                usuarios en la web principal futbollab y mejorar el SEO, desarrollar una aplicación
-                para la imputación de horas, crear una red social con ogg.
-              </li>
+              <li>{{ i18n.translateKey('futbollabDescription') }}</li>
             </ul>
           </li>
         </ul>

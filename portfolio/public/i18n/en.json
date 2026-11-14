@@ -155,6 +155,13 @@
   "cvModalTitle": "Curriculum Vitae",
   "cvModalSubtitle": "R.David Márquez Prieto — Senior Software Engineer",
   "closeCvModal": "Close",
+  "cvPhoneEmail": "Phone: +34 633 582 744 | Email: ",
+  "cvArchLabel": "Architecture:",
+  "cvArchValue": "MVC, SPA, Monorepo, Hexagonal Architecture, CORS, Microservices, REST API.",
+  "cvMethLabel": "Methodologies:",
+  "cvMethValue": "Agile, Scrum, Kanban, Jira, Confluence, Technical Documentation (DT).",
+  "cvTechLabel": "Technologies:",
+  "cvTasksLabel": "Responsibilities:",
   "themeLight": "Light",
   "themeDark": "Dark",
   "themeToggle": "Toggle theme"
