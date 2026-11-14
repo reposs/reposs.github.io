@@ -23,6 +23,7 @@
   --primary: #1d4ed8;
   --primary-hover: #1e40af;
   --primary-glow: rgba(29, 78, 216, 0.22);
+  --on-primary: #ffffff;
 
   --accent: #2563eb;
   --accent-emerald: #059669;
@@ -37,7 +38,8 @@
   --shadow-lg: 0 20px 42px -8px rgba(15, 23, 42, 0.12);
   --shadow-xl: 0 28px 56px -10px rgba(29, 78, 216, 0.16);
 
-  --header-bg: rgba(243, 246, 251, 0.84);
+  --header-bg: rgba(243, 246, 251, 0.96);
+  --drawer-bg: #ffffff;
   --modal-backdrop: rgba(9, 13, 22, 0.7);
 
   --laser-border: rgba(29, 78, 216, 0.92);
@@ -61,6 +63,7 @@ html.dark-mode {
   --primary: #00f2fe;
   --primary-hover: #38bdf8;
   --primary-glow: rgba(0, 242, 254, 0.25);
+  --on-primary: #060911;
 
   --accent: #3b82f6;
   --accent-emerald: #10b981;
@@ -75,7 +78,8 @@ html.dark-mode {
   --shadow-lg: 0 22px 44px -8px rgba(0, 0, 0, 0.72);
   --shadow-xl: 0 28px 60px -10px rgba(0, 242, 254, 0.14), 0 16px 36px -8px rgba(0, 0, 0, 0.8);
 
-  --header-bg: rgba(6, 9, 17, 0.82);
+  --header-bg: rgba(6, 9, 17, 0.96);
+  --drawer-bg: #0b111e;
   --modal-backdrop: rgba(2, 4, 10, 0.85);
 
   --laser-border: rgba(0, 242, 254, 0.95);
@@ -108,7 +112,13 @@ body {
     color 0.3s ease;
 }
 
-app-header,
+app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: block;
+}
+
 main.portfolio-main,
 app-footer {
   position: relative;
@@ -300,7 +310,7 @@ html.dark-mode .text-gradient {
 
   &.primary {
     background: var(--primary);
-    color: #ffffff;
+    color: var(--on-primary);
     border: 1px solid var(--primary);
 
     &:hover {

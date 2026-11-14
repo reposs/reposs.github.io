@@ -214,6 +214,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   font-size: 12px;
 }
 
@@ -223,17 +224,29 @@
   gap: 5px;
   color: var(--text-muted);
   font-weight: 500;
+  min-width: 0;
+  text-align: left;
+}
+
+.geo-pin {
+  flex-shrink: 0;
+  color: var(--primary);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
 }
 
 .card-est-badge {
   background: var(--bg-surface-elevated);
   color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.05em;
   padding: 3px 8px;
   border-radius: 6px;
   border: 1px solid var(--border-color);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .card-avatar-wrapper {
